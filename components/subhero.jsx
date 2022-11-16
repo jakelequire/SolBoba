@@ -38,8 +38,12 @@ function SubHero()
         saturday: ' 11:00am - 9:30pm',
         sunday: ' 12:00am - 8:30pm'
     }
+
+    const location = {
+        tacoma: '8718 S Tacoma Way B, Lakewood, WA 98499'
+    }
     return (
-        <div className="container">
+        <div className="sub-container">
             <div className="subhero-container">
                 {/* buttons */}
                 <div className="btn-wrapper">
@@ -131,11 +135,13 @@ function SubHero()
             </div>
             </div>
             </div> {/* sl-container */}
-            {/*<div className="static-background">*/}
-            {/*    <div className="location-container"> */}
-            {/*        <h1 className="location-header"> Location </h1>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className="static-background">
+                <div className="location-container">
+                    <h1 className="location-header"> Location </h1>
+                    <p className="location">{location.tacoma}</p>
+                    <a className="directions">Directions</a>
+                </div>
+            </div>
         </div>
     );
 }

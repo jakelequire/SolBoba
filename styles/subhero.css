@@ -1,21 +1,8 @@
-.container {
-    margin-left: 14%;
-    margin-right: 14%;
+.sub-container {
+    margin-left: 21.5%;
+    margin-right: 21.5%;
 }
 
-.static-background {
-    background-color: #353535;
-    border-radius: 15px; 
-    width: 1064px;
-    height: 428px;
-    z-index: -3;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: -25.5em;
-    margin-left: 25em;
-    font-weight: 400;
-}
 .subhero-container {
     justify-content: center;
     display: flex;
@@ -64,11 +51,12 @@
 }
 
 .sl-container {
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     display: flex;
     font-family: 'Josefin Sans';
     font-weight: 300;
+    margin-top: 5em;
 }
 
 .button-container {
@@ -220,24 +208,42 @@
     }
 
 /* Location */
+.static-background {
+    justify-content: center;
+    align-items: center;
+    align-self: unset;
+    display: flex;
+    margin-top: -37.2%;
+    font-weight: 400;
+    background-color: #1414147f;
+    border: 4px solid;
+    border-color: #d600ff;
+    border-radius: 10px;
+    height: 400px;
+    width: 425px;
+}
+
 .location-container {
     justify-content: center;
     align-items: center;
     height: 400px;
-    width: 400px;
-    margin-right: 27em;
-    display: flex;
+    width: 425px;
+    display: grid;
+    grid-template-rows: 100px 150px 150px;
 }
 
 .location-header {
-    display: inline-block;
-    margin-top: -32vh;
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 8vh;
-    border-bottom: 2px solid white;
-    padding-right: 3em;
-    padding-left: 3em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 16px;
+    border-bottom: 3px solid;
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 165px;
+    justify-self: center;
 }
 
 .sl-hours-container {
@@ -246,4 +252,27 @@
     display: inline-grid;
     padding-left: 0.4em;
     width: 390px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    height: auto;
+    width: auto;
+}
+
+.directions {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    font-size: 19px;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 5px;
+    height: 55px;
+    width: 150px;
 }
