@@ -1,0 +1,249 @@
+.container {
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.static-background {
+    background-color: #353535;
+    border-radius: 15px; 
+    width: 1064px;
+    height: 428px;
+    z-index: -3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -25.5em;
+    margin-left: 25em;
+    font-weight: 400;
+}
+.subhero-container {
+    justify-content: center;
+    display: flex;
+}
+
+.btn-wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-row-gap: 10px;
+    margin-top: 40px;
+}
+
+.btn {
+    height: 60px;
+    width: 250px;
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    font-weight: 500;
+    color: #d600ff;
+    background-color: transparent;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+    border-color: #d600ff;
+    border-radius: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+    .btn:hover {
+        color: white;
+        background-color: #d600ff
+    }
+
+
+/* Hours Slideshow */
+
+/* Slideshow Buttons */
+.slideshow-container {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.sl-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+}
+
+.button-container {
+    margin-top: -13.5em;
+}
+
+.sl-btn {
+    cursor: pointer;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+#left {
+    display: inline-flex;
+    margin-right: 13em;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+#right {
+    display: inline-flex;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0 3px 3px 0;
+}
+
+#left:hover, #right:hover {
+    background-color: #d600ff
+}
+
+/* Slideshow Background */
+.hours-container {
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+.activeOne {
+    background-color: #1414147f;
+    border: 4px solid;
+    border-color: #d600ff;
+    border-radius: 10px;
+    height: 400px;
+    width: 425px;
+}
+
+.activeTwo {
+    background-color: #1414147f;
+    border: 4px solid;
+    border-color: #d600ff;
+    border-radius: 10px;
+    height: 400px;
+    width: 425px;
+}
+
+.none {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* Slideshow text*/
+.sl-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    
+}
+
+.sl-hours {
+    border-collapse: collapse;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    line-height: 38px;
+    font-size: 23px;
+}
+
+#weekday {
+    display: inline-flex;
+}
+
+.hours-container {
+    margin-top: -1vh;
+    font-size: 19px;
+}
+
+.day-container {
+    font-size: 19px;
+    text-align: center;
+/*    padding-right: 1em;*/
+    margin-top: -1vh;
+}
+
+#text-ul {
+    font-weight: 700
+}
+/* Dots */
+.dots-container {
+    display: inline-flex;
+    margin-top: 14.5vh;
+}
+
+.dots {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 5px;
+    border: 3px solid;
+    border-color: white;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+    .dots:hover {
+        background-color: white;
+    }
+
+#dots-one {
+    background-color: white;
+    transition: background-color 0.9s ease;
+}
+#dots-two {
+    background-color: white;
+    transition: background-color 0.9s ease;
+}
+    #dots-one:active, #dots-two:active {
+        background-color: white;
+    }
+
+/* Location */
+.location-container {
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin-right: 27em;
+    display: flex;
+}
+
+.location-header {
+    display: inline-block;
+    margin-top: -32vh;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 8vh;
+    border-bottom: 2px solid white;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.sl-hours-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(270px, auto);
+    display: inline-grid;
+    padding-left: 0.4em;
+    width: 390px;
+}
