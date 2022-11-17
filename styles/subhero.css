@@ -273,6 +273,15 @@
     border: 3px solid;
     border-color: white;
     border-radius: 5px;
-    height: 55px;
+    height: 60px;
     width: 150px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
+    .directions:hover {
+        background-color: white;
+        color: #d600ff;
+        font-weight: 500;
+    }

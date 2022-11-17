@@ -8,11 +8,17 @@ import fbIcon from '../public/media/fb-logo.png'
 import instaIcon from '../public/media/instaLogo.png'
 import yelpIcon from '../public/media/Yelp_Logo.png'
 import banner from '../public/media/trnsp-white.png'
+import open_banner from '../public/media/trnsp-white-open.png'
+import closed_banner from '../public/media/trnsp-white-closed.png'
 
 function Hero() {
     const fbLink = 'https://www.facebook.com/SolBobaTacoma/'
     const yelpLink = 'https://www.yelp.com/biz/sol-boba-lakewood'
     const instaLink = 'https://www.instagram.com/sol_boba/'
+
+    const currentHour = new Date().getHours()
+    const hoursOpen = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    let arrHour = hoursOpen.includes(currentHour)
     return (
         <div className="Container">
             {/* Navbar */}
@@ -43,7 +49,7 @@ function Hero() {
             {/* Hero */}
             <div className="hero-wrapper">
                 <div className="hero-img">
-                    <Image src={banner} alt="" />
+                    <Image src={arrHour === true ? open_banner : closed_banner} alt={banner} />
                 </div>
             </div>
         </div>

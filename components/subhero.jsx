@@ -139,7 +139,7 @@ function SubHero()
                 <div className="location-container">
                     <h1 className="location-header"> Location </h1>
                     <p className="location">{location.tacoma}</p>
-                    <a className="directions">Directions</a>
+                    <a className="directions" href="">Directions</a>
                 </div>
             </div>
         </div>
