@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 200vh;
+  min-height: 140vh;
   flex: 1;
   flex-direction: column;
   align-items: center;

@@ -142,6 +142,7 @@ function SubHero()
                     <a className="directions" href="">Directions</a>
                 </div>
             </div>
+            <div className="blur-background background-img"> </div>
         </div>
     );
 }
