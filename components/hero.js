@@ -25,7 +25,7 @@ function Hero() {
             <Navbar className="navbar" bg="dark" variant="dark">
                 <Container>
                     <Nav id="nav-group" >
-                        <Nav.Link id="nav-link" href="#features">Menu</Nav.Link>
+                        <Nav.Link id="nav-link" href="/menu">Menu</Nav.Link>
                         <Nav.Link id="nav-link" href="#features">Location</Nav.Link>
                         <Nav.Link id="nav-order" qhref="#pricing">ORDER ONLINE</Nav.Link>
                         {/* Sol Boba Logo*/}
