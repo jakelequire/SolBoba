@@ -1,0 +1,25 @@
+.menupg-container {
+    margin-top: 4em;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.int-menu-container {
+    display: grid;
+    grid-template-columns: 65px repeat(auto-fit, minmax(calc((100% - 100px)/6), 1fr)) 65px;
+    grid-template-rows: repeat(5, 1fr);
+    columns: 1 10px;
+    height: 900px;
+    width: 1200px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.mn {
+    display: grid;
+
+}

@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../styles/hero.css'
 import '../styles/subhero.css'
+import '../styles/menuc.css'
 import 'react'
 import 'react-bootstrap'
 

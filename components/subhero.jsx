@@ -16,7 +16,6 @@ const dayOfWeekName = new Date().toLocaleString(
     'default', { weekday: 'long' }
 );
 
-
 function SubHero()
 {
     const [index, setIndex] = useState(0);
