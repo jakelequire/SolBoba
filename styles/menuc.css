@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     justify-self: center;
+
 }
 
 .mt-img-one, .mt-img-two, .mt-img-three, .mt-img-four, .mt-img-five {
@@ -49,7 +50,7 @@
 .mt-one {
     grid-area: mt-i1;
     display: grid;
-    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-gap: 0px 0px;
     grid-template-areas:
         "mt-img1 "
