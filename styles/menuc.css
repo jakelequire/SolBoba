@@ -1,25 +1,101 @@
+* {
+    justify-self: center;
+}
+
 .menupg-container {
     margin-top: 4em;
     width: auto;
     height: auto;
     justify-content: center;
     align-items: center;
+    justify-self: center;
     display: flex;
 }
 
 .int-menu-container {
     display: grid;
-    grid-template-columns: 65px repeat(auto-fit, minmax(calc((100% - 100px)/6), 1fr)) 65px;
-    grid-template-rows: repeat(5, 1fr);
-    columns: 1 10px;
-    height: 900px;
-    width: 1200px;
-    background-color: blue;
-    justify-content: center;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". mt-header st-header ft-header ."
+        ". mt-i1 st-i1 ft-1 ."
+        ". mt-i2 st-i2 ft-i2 ."
+        ". mt-i3 st-i3 ft-3 ."
+        ". mt-i4 st-i4 ft-i4 ."
+        ". mt-i5 st-i5 ft-i5 .";
+    width: 1000px;
+    height: 1100px;
+    background-color: #1700ad;
     align-items: center;
+    justify-content: center;
 }
 
-.mn {
-    display: grid;
 
+.mt-one, .mt-two, .mt-three, .mt-four, .mt-five {
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.mt-img-one, .mt-img-two, .mt-img-three, .mt-img-four, .mt-img-five {
+    height: 70%;
+    width: auto;
+}
+.mt-header {
+    grid-area: mt-header;
+}
+
+.mt-one {
+    grid-area: mt-i1;
+    display: grid;
+    grid-template-rows: 1.5fr 0.5fr;
+    grid-gap: 0px 0px;
+    grid-template-areas:
+        "mt-img1 "
+        "mt-desc1";
+}
+
+.mt-two {
+    grid-area: mt-i2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "mt-img2"
+        "mt-desc2";
+}
+
+.mt-three {
+    grid-area: mt-i3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "mt-img3"
+        "mt-desc3";
+}
+
+.mt-four {
+    grid-area: mt-i4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "mt-img4"
+        "mt-desc4";
+}
+
+.mt-five {
+    grid-area: mt-i5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "mt-img5"
+        "mt-desc5";
 }
