@@ -65,86 +65,69 @@ h3 {
 
 .mt-two {
     grid-area: mt-two;
-    justify-self: center;
 }
 
 .mt-three {
     grid-area: mt-three;
-    justify-self: center;
 }
 
 .mt-four {
     grid-area: mt-four;
-    justify-self: center;
 }
 
 .mt-five {
     grid-area: mt-five;
-    justify-content: center;
 }
 
 .matcha-menu {
     grid-area: matcha-menu;
-    justify-self: center;
 }
 
 .st-header {
     grid-area: st-header;
-    justify-self: center;
 }
 
 .st-one {
     grid-area: st-one;
-    justify-self: center;
 }
 
 .st-two {
     grid-area: st-two;
-    justify-self: center;
 }
 
 .st-three {
     grid-area: st-three;
-    justify-self: center;
 }
 
 .st-four {
     grid-area: st-four;
-    justify-self: center;
 }
 
 .st-five {
     grid-area: st-five;
-    justify-self: center;
 }
 
 
 .ft-header {
     grid-area: ft-header;
-    justify-self: center;
 }
 
 .ft-one {
     grid-area: ft-one;
-    justify-self: center;
 }
 
 .ft-two {
     grid-area: ft-two;
-    justify-self: center;
 }
 
 .ft-three {
     grid-area: ft-three;
-    justify-self: center;
 }
 
 .ft-four {
     grid-area: ft-four;
-    justify-self: center;
 }
 
 .ft-five {
     grid-area: ft-five;
-    justify-self: center;
 }
