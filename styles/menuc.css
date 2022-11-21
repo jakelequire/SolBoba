@@ -1,102 +1,150 @@
 * {
     justify-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .menupg-container {
-    margin-top: 4em;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
     display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 3fr;
+    height: auto;
+
 }
 
 .int-menu-container {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
-    grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        ". mt-header st-header ft-header ."
-        ". mt-i1 st-i1 ft-1 ."
-        ". mt-i2 st-i2 ft-i2 ."
-        ". mt-i3 st-i3 ft-3 ."
-        ". mt-i4 st-i4 ft-i4 ."
-        ". mt-i5 st-i5 ft-i5 .";
-    width: 1000px;
-    height: 1100px;
-    background-color: #1700ad;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.mt-one, .mt-two, .mt-three, .mt-four, .mt-five {
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-
-}
-
-.mt-img-one, .mt-img-two, .mt-img-three, .mt-img-four, .mt-img-five {
-    height: 70%;
+        "mt-header st-header ft-header"
+        "mt-one st-one ft-one"
+        "mt-two st-two ft-two"
+        "mt-three st-three ft-three"
+        "mt-four st-four ft-four"
+        "mt-five st-five ft-five";
+    background-color: blueviolet;
+    border-radius: 35px;
+    grid-column-gap: 150px;
     width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+/*
+    q: 
+    a: 
+*/
+
 .mt-header {
+    justify-self: center;
     grid-area: mt-header;
 }
 
-.mt-one {
-    grid-area: mt-i1;
+h3 {
     display: grid;
-    grid-template-rows: 1fr 0.5fr;
-    grid-gap: 0px 0px;
-    grid-template-areas:
-        "mt-img1 "
-        "mt-desc1";
+    justify-self: center;
+    align-self: center;
+}
+
+.mt-one {
+    grid-area: mt-one;
 }
 
 .mt-two {
-    grid-area: mt-i2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "mt-img2"
-        "mt-desc2";
+    grid-area: mt-two;
+    justify-self: center;
 }
 
 .mt-three {
-    grid-area: mt-i3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "mt-img3"
-        "mt-desc3";
+    grid-area: mt-three;
+    justify-self: center;
 }
 
 .mt-four {
-    grid-area: mt-i4;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "mt-img4"
-        "mt-desc4";
+    grid-area: mt-four;
+    justify-self: center;
 }
 
 .mt-five {
-    grid-area: mt-i5;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "mt-img5"
-        "mt-desc5";
+    grid-area: mt-five;
+    justify-content: center;
+}
+
+.matcha-menu {
+    grid-area: matcha-menu;
+    justify-self: center;
+}
+
+.st-header {
+    grid-area: st-header;
+    justify-self: center;
+}
+
+.st-one {
+    grid-area: st-one;
+    justify-self: center;
+}
+
+.st-two {
+    grid-area: st-two;
+    justify-self: center;
+}
+
+.st-three {
+    grid-area: st-three;
+    justify-self: center;
+}
+
+.st-four {
+    grid-area: st-four;
+    justify-self: center;
+}
+
+.st-five {
+    grid-area: st-five;
+    justify-self: center;
+}
+
+
+.ft-header {
+    grid-area: ft-header;
+    justify-self: center;
+}
+
+.ft-one {
+    grid-area: ft-one;
+    justify-self: center;
+}
+
+.ft-two {
+    grid-area: ft-two;
+    justify-self: center;
+}
+
+.ft-three {
+    grid-area: ft-three;
+    justify-self: center;
+}
+
+.ft-four {
+    grid-area: ft-four;
+    justify-self: center;
+}
+
+.ft-five {
+    grid-area: ft-five;
+    justify-self: center;
 }

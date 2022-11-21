@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import placeholder from '../public/media/drinks/placeholder.png'
 import banana_milk from '../public/media/drinks/banana-milk.png'
 import bloopi from '../public/media/drinks/bloopi.png'
 import blueb_matcha from '../public/media/drinks/blueb-matcha.png'
@@ -28,9 +28,10 @@ function MenuC() {
     return (
             <div className="menupg-container">
                 <div className="int-menu-container">
+                
+                    {/* Milk Tea Menu */}
                     <div className="mt-header">
-                        <Image className='mt' />
-                        <h3> Milk Tea Header </h3>
+                        <h3> Milk Tea </h3>
                     </div>
                 
                     <div className="mt-one">
@@ -42,7 +43,7 @@ function MenuC() {
                         <h3> Barley Milk Tea </h3>
                     </div>
                     <div className="mt-three">
-                        <Image className='mt-img-three' src={boba_milktea} />
+                        <Image className='mt-img-three' src={honeydew} />
                         <h3> Honeydew Milk Tea </h3>
                     </div>
                     <div className="mt-four">
@@ -54,15 +55,60 @@ function MenuC() {
                         <h3> Thai Milk Tea </h3>
                     </div>
 
-                    <div className="Specialty-menu mn">
-
+                    {/* Specialty Menu */}
+                    <div className="st-header">
+                        <h3> Specialty </h3>
                     </div>
+
+                     <div className="st-one">
+                        <Image className='st-img-one' src={taro_oreo} />
+                        <h3> Taro Oreo Slush </h3>
+                    </div>
+                    <div className="st-two">
+                        <Image className='st-img-two' src={placeholder} />
+                        <h3> Asian Pear Slush </h3>
+                    </div>
+                    <div className="st-three">
+                        <Image className='st-img-three' src={placeholder} />
+                        <h3> Dalgona Latte </h3>
+                    </div>
+                    <div className="st-four">
+                        <Image className='st-img-four'src={tiger_boba}/>
+                        <h3> Brown Sugar Latte </h3>
+                    </div>
+                    <div className="st-five">
+                        <Image className='st-img-five'src={tiramisu}/>
+                        <h3> Tiramisu Latte </h3>
+                    </div>
+
+                    {/* Fruit Tea Menu */}
+                    <div className="ft-header">
+                        <h3> Fruit Tea </h3>
+                    </div>                
+
+                     <div className="ft-one">
+                        <Image className='ft-img-one' src={lychee_hibiscus} />
+                        <h3> Lychee Hibiscus Tea </h3>
+                    </div>
+                    <div className="ft-two">
+                        <Image className='ft-img-two' src={hibiscus_mango} />
+                        <h3> Mango Hibiscus Tea </h3>
+                    </div>
+                    <div className="ft-three">
+                        <Image className='ft-img-three' src={orange_guava} />
+                        <h3> Pog Green Tea </h3>
+                    </div>
+                    <div className="ft-four">
+                        <Image className='ft-img-four'src={bloopi}/>
+                        <h3> Bloopi </h3>
+                    </div>
+                    <div className="ft-five">
+                        <Image className='ft-img-five'src={strawb_blacktea}/>
+                        <h3> Strawberry Black Tea</h3>
+                    </div>
+                    
 
                     <div className="matcha-menu mn">
-
-                    </div>
-
-                    <div className="fruit-tea-menu mn">
 
                     </div>
                 </div>
@@ -70,4 +116,4 @@ function MenuC() {
     );
 }
 
-export default MenuC
+export default MenuC;
