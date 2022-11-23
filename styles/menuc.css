@@ -5,22 +5,25 @@
     align-items: center;
 }
 
-.menupg-container {
+/*.menupg-container {
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    width: 3fr;
+    width: 1900px;
     height: auto;
 
-}
+}*/
+/* 
 
+*/
 .int-menu-container {
     display: grid;
     justify-content: center;
+    justify-self: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "mt-header st-header ft-header"
@@ -29,11 +32,13 @@
         "mt-three st-three ft-three"
         "mt-four st-four ft-four"
         "mt-five st-five ft-five";
-    background-color: blueviolet;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: #d600ff;
     border-radius: 35px;
-    grid-column-gap: 150px;
-    width: auto;
-    height: auto;
+    grid-column-gap: 0px;
+    width: 65%;
+    height: 80%;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -43,20 +48,88 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-/*
-    q: 
-    a: 
-*/
 
+.int2-menu-container {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "mt2-header st2-header ft2-header"
+        "mt2-one st2-one ft2-one"
+        "mt2-two st2-two ft2-two"
+        "mt2-three st2-three ft2-three"
+        "mt2-four st2-four ft2-four"
+        "mt2-five st2-five ft2-five";
+    background-color: transparent;
+    border: 5px solid;
+    border-color: #d600ff;
+    border-radius: 35px;
+    grid-column-gap: 0px;
+    width: 65%;
+    height: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+h3 {
+    display: flex;
+    font-size: 20px;
+    cursor: default;
+    justify-self: center;
+    align-self: center;
+    background-color: #000c1d;
+    padding: 8px;
+    border-radius: 10px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+    h3:hover {
+        color: black;
+        background-color: aquamarine
+    }
+
+
+.menu-header {
+    justify-self: center;
+    align-items: center;
+    background-color: #d600ff;
+    padding: 0 2em 0.3em 2em;
+    border-radius: 25px;
+    text-decoration: underline;
+}
+
+.download-menu {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
+    background-color: #d600ff;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+}
+
+/* ----- FIRST MENU ----- */
 .mt-header {
     justify-self: center;
     grid-area: mt-header;
-}
-
-h3 {
-    display: grid;
-    justify-self: center;
-    align-self: center;
 }
 
 .mt-one {
@@ -130,4 +203,83 @@ h3 {
 
 .ft-five {
     grid-area: ft-five;
+}
+
+/* ----- SECOND MENU ----- */
+
+.mt2-header {
+    justify-self: center;
+    grid-area: mt2-header;
+}
+
+.mt2-one {
+    grid-area: mt2-one;
+}
+
+.mt2-two {
+    grid-area: mt2-two;
+}
+
+.mt2-three {
+    grid-area: mt2-three;
+}
+
+.mt2-four {
+    grid-area: mt2-four;
+}
+
+.mt2-five {
+    grid-area: mt2-five;
+}
+
+.matcha2-menu {
+    grid-area: matcha2-menu;
+}
+
+.st2-header {
+    grid-area: st2-header;
+}
+
+.st2-one {
+    grid-area: st2-one;
+}
+
+.st2-two {
+    grid-area: st2-two;
+}
+
+.st2-three {
+    grid-area: st2-three;
+}
+
+.st2-four {
+    grid-area: st2-four;
+}
+
+.st2-five {
+    grid-area: st2-five;
+}
+
+.ft2-header {
+    grid-area: ft2-header;
+}
+
+.ft2-one {
+    grid-area: ft2-one;
+}
+
+.ft2-two {
+    grid-area: ft2-two;
+}
+
+.ft2-three {
+    grid-area: ft2-three;
+}
+
+.ft2-four {
+    grid-area: ft2-four;
+}
+
+.ft2-five {
+    grid-area: ft2-five;
 }
