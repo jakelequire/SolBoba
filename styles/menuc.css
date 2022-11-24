@@ -5,39 +5,26 @@
     align-items: center;
 }
 
-/*.menupg-container {
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-    width: 1900px;
-    height: auto;
-
-}*/
-/* 
-
-*/
 .int-menu-container {
     display: grid;
     justify-content: center;
     justify-self: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "mt-header st-header ft-header"
-        "mt-one st-one ft-one"
-        "mt-two st-two ft-two"
-        "mt-three st-three ft-three"
-        "mt-four st-four ft-four"
-        "mt-five st-five ft-five";
+        "mt-header mt-header2 st-header st-header2 st-header3 "
+        "mt-one mt-five st-one st-five st-nine"
+        "mt-two mt-six st-two st-six st-ten"
+        "mt-three mt-seven st-three st-seven st-eleven"
+        "mt-four mt-eight st-four st-eight st-twelve ";
     background-color: transparent;
     border: 5px solid;
     border-color: #d600ff;
     border-radius: 35px;
     grid-column-gap: 0px;
-    width: 65%;
+    width: 85%;
     height: 80%;
     margin: auto;
     margin-top: 100px;
@@ -55,21 +42,20 @@
     justify-self: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "mt2-header st2-header ft2-header"
-        "mt2-one st2-one ft2-one"
-        "mt2-two st2-two ft2-two"
-        "mt2-three st2-three ft2-three"
-        "mt2-four st2-four ft2-four"
-        "mt2-five st2-five ft2-five";
+        "mt2-header mt2-header2 ft-header ft-header2 ft-header3 "
+        "mt2-one mt2-five ft-one ft-five ft-nine"
+        "mt2-two mt2-six ft-two ft-six ft-ten"
+        "mt2-three mt2-seven ft-three ft-seven ft-eleven"
+        "mt2-four mt2-eight ft-four ft-eight ft-twelve ";
     background-color: transparent;
     border: 5px solid;
     border-color: #d600ff;
     border-radius: 35px;
     grid-column-gap: 0px;
-    width: 65%;
+    width: 85%;
     height: 80%;
     margin: auto;
     margin-top: 100px;
@@ -82,7 +68,8 @@
 }
 
 
-
+.mt-img {
+}
 
 
 h3 {
@@ -127,6 +114,8 @@ h3 {
 }
 
 /* ----- FIRST MENU ----- */
+
+/* -- Milk Tea -- */
 .mt-header {
     justify-self: center;
     grid-area: mt-header;
@@ -152,10 +141,7 @@ h3 {
     grid-area: mt-five;
 }
 
-.matcha-menu {
-    grid-area: matcha-menu;
-}
-
+/* -- Specialty -- */
 .st-header {
     grid-area: st-header;
 }
@@ -180,26 +166,31 @@ h3 {
     grid-area: st-five;
 }
 
-
-.ft-header {
-    grid-area: ft-header;
+.st-six {
+    grid-area: st-six;
 }
 
-.ft-one {
-    grid-area: ft-one;
+.st-seven {
+    grid-area: st-seven;
 }
 
-.ft-two {
-    grid-area: ft-two;
+.st-eight {
+    grid-area: st-eight;
 }
 
-.ft-three {
-    grid-area: ft-three;
+.st-nine {
+    grid-area: st-nine;
 }
 
-.ft-four {
-    grid-area: ft-four;
+.st-ten {
+    grid-area: st-ten;
 }
+
+.st-eleven {
+    grid-area: st-eleven;
+}
+
+
 
 .ft-five {
     grid-area: ft-five;
@@ -228,58 +219,40 @@ h3 {
     grid-area: mt2-four;
 }
 
-.mt2-five {
-    grid-area: mt2-five;
+
+/* -- Fruit Tea -- */
+.ft-header {
+    grid-area: ft-header;
 }
 
-.matcha2-menu {
-    grid-area: matcha2-menu;
+.ft-one {
+    grid-area: ft-one;
 }
 
-.st2-header {
-    grid-area: st2-header;
+.ft-two {
+    grid-area: ft-two;
 }
 
-.st2-one {
-    grid-area: st2-one;
+.ft-three {
+    grid-area: ft-three;
 }
 
-.st2-two {
-    grid-area: st2-two;
+.ft-four {
+    grid-area: ft-four;
 }
 
-.st2-three {
-    grid-area: st2-three;
+.ft-five {
+    grid-area: ft-five;
 }
 
-.st2-four {
-    grid-area: st2-four;
+.ft-six {
+    grid-area: ft-six;
 }
 
-.st2-five {
-    grid-area: st2-five;
+.ft-seven {
+    grid-area: ft-seven;
 }
 
-.ft2-header {
-    grid-area: ft2-header;
-}
-
-.ft2-one {
-    grid-area: ft2-one;
-}
-
-.ft2-two {
-    grid-area: ft2-two;
-}
-
-.ft2-three {
-    grid-area: ft2-three;
-}
-
-.ft2-four {
-    grid-area: ft2-four;
-}
-
-.ft2-five {
-    grid-area: ft2-five;
+.ft-eight {
+    grid-area: ft-eight;
 }

@@ -81,12 +81,61 @@ function MenuC() {
                         <Image className='mt-img'src={tiramisu}/>
                         <h3> Tiramisu Latte </h3>
                     </div>
+                    <div className="st-six">
+                        <Image className='mt-img' src={strawb_milk} />
+                        <h3> Strawberry Milk </h3>
+                    </div>
+                    <div className="st-seven">
+                        <Image className='mt-img' src={placeholder} />
+                        <h3> Blueberry Milk </h3>
+                    </div>
+                    <div className="st-eight">
+                        <Image className='mt-img' src={placeholder} />
+                        <h3> Ube Latte </h3>
+                    </div>
+                    <div className="st-nine">
+                        <Image className='mt-img' src={tiger_boba} />
+                        <h3> Brown Sugar Oreo </h3>
+                    </div>
+                    <div className="st-ten">
+                        <Image className='mt-img' src={placeholder} />
+                        <h3> Dirty Ube Latte </h3>
+                    </div>
+                     <div className="st-eleven">
+                        <Image className='mt-img' src={placeholder} />
+                        <h3> Injeolmi Latte </h3>
+                    </div>
 
+
+                </div>
+
+            {/* ------- Second Menu -------*/}
+            <div className="int2-menu-container">
+                {/* Matcha Menu */}
+                    <div className="mt2-header">
+                        <h1 className="menu-header"> Matcha </h1>
+                    </div>
+
+                    <div className="mt2-one">
+                        <Image className='mt-img' src={matcha_latte} />
+                        <h3> Matcha Latte </h3>
+                    </div>
+                    <div className="mt2-two">
+                        <Image className='mt-img' src={strawb_matcha} />
+                        <h3> Strawberry Matcha </h3>
+                    </div>
+                    <div className="mt2-three">
+                        <Image className='mt-img' src={blueb_matcha} />
+                        <h3> Blueberry Matcha </h3>
+                    </div>
+                    <div className="mt2-four">
+                        <Image className='mt-img' src={dirty_matcha} />
+                        <h3> Dirty Matcha </h3>
+                    </div>
                     {/* Fruit Tea Menu */}
                     <div className="ft-header">
                         <h1 className="menu-header"> Fruit Tea </h1>
-                    </div>                
-
+                    </div>
                      <div className="ft-one">
                         <Image className='mt-img' src={lychee_hibiscus} />
                         <h3> Lychee Hibiscus Tea </h3>
@@ -107,87 +156,19 @@ function MenuC() {
                         <Image className='mt-img'src={strawb_blacktea}/>
                         <h3> Strawberry Black Tea</h3>
                     </div>
-                </div>
-
-            {/* ------- Second Menu -------*/}
-            <div className="int2-menu-container">
-                {/* Milk Tea Menu */}
-                    <div className="mt2-header">
-                        <h1> Matcha </h1>
-                    </div>
-
-                    <div className="mt2-one">
-                        <Image className='mt-img-one' src={boba_milktea} />
-                        <h3> Matcha Latte </h3>
-                    </div>
-                    <div className="mt2-two">
-                        <Image className='mt-img-two' src={boba_milktea} />
-                        <h3> Strawberry Matcha </h3>
-                    </div>
-                    <div className="mt2-three">
-                        <Image className='mt-img-three' src={honeydew} />
-                        <h3> Blueberry Matcha </h3>
-                    </div>
-                    <div className="mt2-four">
-                        <Image className='mt-img-four' src={boba_milktea} />
-                        <h3> Dirty Matcha </h3>
-                    </div>
-                    <div className="mt2-five">
-                        <Image className='mt-img-five' src={placeholder} />
-                        <h3> Placeholder</h3>
-                    </div>
-
-                    {/* Specialty Menu */}
-                    <div className="st2-header">
-                        <h1> Specialty Cont. </h1>
-                    </div>
-
-                    <div className="st2-one">
-                        <Image className='st-img-one' src={taro_oreo} />
-                        <h3> Strawberry Milk </h3>
-                    </div>
-                    <div className="st2-two">
-                        <Image className='st-img-two' src={placeholder} />
-                        <h3> Blueberry Milk </h3>
-                    </div>
-                    <div className="st2-three">
-                        <Image className='st-img-three' src={placeholder} />
-                        <h3> Ube Latte </h3>
-                    </div>
-                    <div className="st2-four">
-                        <Image className='st-img-four' src={tiger_boba} />
-                        <h3> Brown Sugar Oreo </h3>
-                    </div>
-                    <div className="st2-five">
-                        <Image className='st-img-five' src={tiramisu} />
-                        <h3> Dirty Ube Latte </h3>
-                    </div>
-
-                    {/* Fruit Tea Menu */}
-                    <div className="ft2-header">
-                        <h1> Fruit Tea Cont. </h1>
-                    </div>
-
-                    <div className="ft2-one">
-                        <Image className='ft-img-one' src={lychee_hibiscus} />
+                    <div className="ft-six">
+                        <Image className='mt-img' src={lychee_hibiscus} />
                         <h3> Strawberry Green Tea </h3>
                     </div>
-                    <div className="ft2-two">
-                        <Image className='ft-img-two' src={hibiscus_mango} />
+                    <div className="ft-seven">
+                        <Image className='mt-img' src={hibiscus_mango} />
                         <h3> Purple Flurp </h3>
                     </div>
-                    <div className="ft2-three">
-                        <Image className='ft-img-three' src={orange_guava} />
+                    <div className="ft-eight">
+                        <Image className='mt-img' src={placeholder} />
                         <h3> Lemon Thai Tea </h3>
                     </div>
-                    <div className="ft2-four">
-                        <Image className='ft-img-four' src={placeholder} />
-                        <h3> Placeholder </h3>
-                    </div>
-                    <div className="ft2-five">
-                        <Image className='ft-img-five' src={placeholder} />
-                        <h3>Placeholder</h3>
-                    </div>
+                
             </div>
             <div className="download-menu">
                 <a href="" className="menu-btn">Download Menu</a>
