@@ -17,7 +17,7 @@ function NavBar() {
             <Container>
                 <Nav id="nav-group" >
                     <Nav.Link id="nav-link" href="#features">Menu</Nav.Link>
-                    <Nav.Link id="nav-link" href="#features">Location</Nav.Link>
+                    <Nav.Link id="nav-link" href="#features">Reviews</Nav.Link>
                     <Nav.Link id="nav-order" qhref="#pricing">ORDER ONLINE</Nav.Link>
                     {/* Sol Boba Logo*/}
                     <Navbar.Brand className="navbar-brand" href="/">

@@ -5,6 +5,23 @@
     align-items: center;
 }
 
+.menupg-container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+}
+
+.menupg-header {
+    display: inline-flex;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    font-size: 55px;
+    background-color: #808080;
+    padding: 10px 3em 10px 3em;
+    border-radius: 10px;
+}
 .int-menu-container {
     display: grid;
     justify-content: center;
@@ -12,7 +29,7 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "mt-header mt-header2 st-header st-header2 st-header3 "
         "mt-one mt-five st-one st-five st-nine"
@@ -26,9 +43,9 @@
     grid-column-gap: 0px;
     width: 85%;
     height: 80%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: auto;  
+    margin-top: 25px;
+    margin-bottom: 75px;
     padding: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -43,13 +60,13 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "mt2-header mt2-header2 ft-header ft-header2 ft-header3 "
-        "mt2-one mt2-five ft-one ft-five ft-nine"
-        "mt2-two mt2-six ft-two ft-six ft-ten"
-        "mt2-three mt2-seven ft-three ft-seven ft-eleven"
-        "mt2-four mt2-eight ft-four ft-eight ft-twelve ";
+        "mt2-header ft-header ft-header2 ext-header ext-header2 "
+        "mt2-one ft-one ft-five ext-one ext-five"
+        "mt2-two ft-two ft-six ext-two ext-six"
+        "mt2-three ft-three ft-seven ext-three ext-seven"
+        "mt2-four ft-four ft-eight ext-four ext-eight";
     background-color: transparent;
     border: 5px solid;
     border-color: #d600ff;
@@ -58,7 +75,7 @@
     width: 85%;
     height: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     padding: 20px;
     padding-top: 20px;
@@ -96,7 +113,7 @@ h3 {
     justify-self: center;
     align-items: center;
     background-color: #d600ff;
-    padding: 0 2em 0.3em 2em;
+    padding: 0.1em 3em 0.4em 3em;
     border-radius: 25px;
     text-decoration: underline;
 }
@@ -119,10 +136,12 @@ h3 {
 .mt-header {
     justify-self: center;
     grid-area: mt-header;
+    grid-column: 1 / 3;
 }
 
 .mt-one {
     grid-area: mt-one;
+
 }
 
 .mt-two {
@@ -140,10 +159,16 @@ h3 {
 .mt-five {
     grid-area: mt-five;
 }
-
 /* -- Specialty -- */
 .st-header {
     grid-area: st-header;
+    grid-column: 3 / 6
+}
+
+.st-one, .st-two, .st-three, .st-four {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-left: 3px solid #d600ff;
 }
 
 .st-one {
@@ -191,12 +216,12 @@ h3 {
 }
 
 
-
-.ft-five {
-    grid-area: ft-five;
-}
-
 /* ----- SECOND MENU ----- */
+.mt2-one, .mt2-two, .mt2-three, .mt2-four {
+    padding-left: 55px;
+    padding-right: 4em;
+    border-right: 3px solid #d600ff;
+}
 
 .mt2-header {
     justify-self: center;
@@ -219,14 +244,20 @@ h3 {
     grid-area: mt2-four;
 }
 
-
 /* -- Fruit Tea -- */
 .ft-header {
     grid-area: ft-header;
+    grid-column: 2 / 4;
 }
 
+.ft-five, .ft-six, .ft-seven, .ft-eight {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 3px solid #d600ff;
+}
 .ft-one {
     grid-area: ft-one;
+
 }
 
 .ft-two {
@@ -255,4 +286,19 @@ h3 {
 
 .ft-eight {
     grid-area: ft-eight;
+}
+
+/* -- Extras -- */
+.ext-header {
+    grid-area: ext-header;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    grid-column: 4 / 6
+}
+
+.ext-one {
+    display: inline-block;
+    grid-area: ext-one;
+    grid-column: 4 / 6
 }

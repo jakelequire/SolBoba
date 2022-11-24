@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import placeholder from '../public/media/drinks/placeholder.png'
 import banana_milk from '../public/media/drinks/banana-milk.png'
 import bloopi from '../public/media/drinks/bloopi.png'
@@ -27,7 +28,9 @@ function MenuC() {
 
     return (
         <>
-            <h2> Sol Boba Menu </h2>
+              <div className="menupg-container">
+                <h2 className="menupg-header"> Sol Boba Menu </h2>
+              </div>
                 <div className="int-menu-container">
                 
                     {/* Milk Tea Menu */}
@@ -55,7 +58,6 @@ function MenuC() {
                         <Image className='mt-img'src={thai_tea}/>
                         <h3> Thai Milk Tea </h3>
                     </div>
-
                     {/* Specialty Menu */}
                     <div className="st-header">
                         <h1 className="menu-header"> Specialty </h1>
@@ -168,7 +170,18 @@ function MenuC() {
                         <Image className='mt-img' src={placeholder} />
                         <h3> Lemon Thai Tea </h3>
                     </div>
-                
+                    <div className="ext-header">
+                        <h1 className="menu-header"> Extras </h1>
+                    </div>
+                    <div className="ext-one">
+                        <h2>Toppings</h2>
+                        <p>Tapioca Pearls</p>
+                        <p>Crystal Boba</p>
+                        <p>Lychee Jelly</p>
+                        <p>Coffee Jelly</p>
+                        <p>Mango Jelly</p>
+                        <p>Oreo Jelly</p>
+                    </div>
             </div>
             <div className="download-menu">
                 <a href="" className="menu-btn">Download Menu</a>
