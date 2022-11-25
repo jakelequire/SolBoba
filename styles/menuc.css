@@ -302,3 +302,26 @@ h3 {
     grid-area: ext-one;
     grid-column: 4 / 6
 }
+
+.topping-header {
+    display: flex;
+    font-size: 35px;
+    text-decoration: underline;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    grid-column: 4 / 6
+}
+
+.tp-ul {
+    display: flex;
+    font-size: 30px;
+    line-height: 38px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

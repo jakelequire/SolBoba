@@ -174,13 +174,13 @@ function MenuC() {
                         <h1 className="menu-header"> Extras </h1>
                     </div>
                     <div className="ext-one">
-                        <h2>Toppings</h2>
-                        <p>Tapioca Pearls</p>
-                        <p>Crystal Boba</p>
-                        <p>Lychee Jelly</p>
-                        <p>Coffee Jelly</p>
-                        <p>Mango Jelly</p>
-                        <p>Oreo Jelly</p>
+                        <h2 className="topping-header">Toppings</h2>
+                        <ul className="tp-ul">Tapioca Pearls</ul>
+                        <ul className="tp-ul">Crystal Boba</ul>
+                        <ul className="tp-ul">Lychee Jelly</ul>
+                        <ul className="tp-ul">Coffee Jelly</ul>
+                        <ul className="tp-ul">Mango Jelly</ul>
+                        <ul className="tp-ul">Oreo Jelly</ul>
                     </div>
             </div>
             <div className="download-menu">
