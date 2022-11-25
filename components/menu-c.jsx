@@ -182,6 +182,10 @@ function MenuC() {
                         <ul className="tp-ul">Mango Jelly</ul>
                         <ul className="tp-ul">Oreo Jelly</ul>
                     </div>
+                    <div className="ext-two">
+                        <h2 className="temp-header">Add-Ons</h2>
+                        <ul className="tp-ul">Matcha Powder</ul>
+                    </div>
             </div>
             <div className="download-menu">
                 <a href="" className="menu-btn">Download Menu</a>
