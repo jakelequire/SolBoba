@@ -44,7 +44,7 @@ function Hero() {
             {/* Hero */}
             <div className="hero-wrapper">
                 <div className="hero-img">
-                    <Image src={arrHour === true ? open_banner : closed_banner} alt={banner} />
+                    <Image priority src={arrHour === true ? open_banner : closed_banner} alt={banner} />
                 </div>
             </div>
         </div>

@@ -5,7 +5,6 @@ const nextConfig = {
 
 module.exports = {
     reactStrictMode: true,
-    nextConfig,
   webpack: (config) => {
     config.module.rules.push({
       test: /\.pdf$/,
