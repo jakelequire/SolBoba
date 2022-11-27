@@ -297,12 +297,6 @@ h3 {
     grid-column: 4 / 6
 }
 
-.ext-one {
-    display: inline-block;
-    grid-area: ext-one;
-    grid-column: 4 / 6
-}
-
 .topping-header {
     display: flex;
     font-size: 35px;
@@ -326,7 +320,33 @@ h3 {
     margin: 0;
 }
 
-.temp-header {
+.ext-one {
+    display: inline-block;
+    grid-area: ext-one;
+    grid-column: 4 / 6
+}
+.ext-two {
+    display: inline-block;
+    grid-area: ext-two;
+    grid-column: 4 / 6;
+    margin-bottom: 10em;
+
+}
+.ext-three {
+    display: inline-block;
+    grid-area: ext-three;
+    grid-column: 4 / 6;
+    grid-row: 2 / 6;
+    margin-top: 8em;
+}
+.ext-four {
+    display: inline-block;
+    grid-area: ext-four;
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
+    margin-top: 15em;
+}
+.ma-header, .il-header, .sl-header {
     display: flex;
     font-size: 35px;
     text-decoration: underline;
@@ -334,10 +354,9 @@ h3 {
     justify-self: center;
     align-items: center;
     align-content: center;
-    grid-column: 4 / 6
 }
 
-.tmp.ul {
+.tmp-ul {
     display: flex;
     font-size: 30px;
     line-height: 38px;

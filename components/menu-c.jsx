@@ -23,6 +23,8 @@ import thai_tea from '../public/media/drinks/thai-tea.png'
 import tiger_boba from '../public/media/drinks/tiger-boba.png'
 import tiramisu from '../public/media/drinks/tiramisu.png'
 import honeydew from '../public/media/drinks/honeydew.png'
+import icelevel from '../public/media/icelevel.png'
+import sugarlevel from '../public/media/sugarlevel.png'
 
 function MenuC() {
 
@@ -183,8 +185,16 @@ function MenuC() {
                         <ul className="tp-ul">Oreo Jelly</ul>
                     </div>
                     <div className="ext-two">
-                        <h2 className="temp-header">Add-Ons</h2>
-                        <ul className="tp-ul">Matcha Powder</ul>
+                        <h2 className="ma-header">Milk Alternative</h2>
+                        <ul className="tp-ul">Oat Milk</ul>
+                    </div>
+                     <div className="ext-three">
+                        <h2 className="il-header">Ice Level</h2>
+                        <Image src={icelevel} alt="" />
+                    </div>
+                     <div className="ext-four">
+                        <h2 className="sl-header">Sugar Level</h2>
+                        <Image src={sugarlevel} alt="" />
                     </div>
             </div>
             <div className="download-menu">
