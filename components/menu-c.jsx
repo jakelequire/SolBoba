@@ -11,7 +11,7 @@ function MenuC() {
              <div className="int-menu-container">
              
                  {/* Milk Tea Menu */}
-                 <div className="mt-header">
+                 <div className="mt-header" id="milk-tea">
                      <h1 className="menu-header"> Milk Tea </h1>
                  </div>
              
@@ -36,7 +36,7 @@ function MenuC() {
                      <h3> Thai Milk Tea </h3>
                  </div>
                  {/* Specialty Menu */}
-                 <div className="st-header">
+                 <div className="st-header" id="specialty">
                      <h1 className="menu-header"> Specialty </h1>
                  </div>
 
@@ -89,7 +89,7 @@ function MenuC() {
              {/* ------- Second Menu -------*/}
              <div className="int2-menu-container">
                  {/* Matcha Menu */}
-                 <div className="mt2-header">
+                 <div className="mt2-header" id="matcha">
                      <h1 className="menu-header"> Matcha </h1>
                  </div>
 
@@ -110,7 +110,7 @@ function MenuC() {
                      <h3> Dirty Matcha </h3>
                  </div>
                  {/* Fruit Tea Menu */}
-                 <div className="ft-header">
+                 <div className="ft-header" id="fruit-tea">
                      <h1 className="menu-header"> Fruit Tea </h1>
                  </div>
 

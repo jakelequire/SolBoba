@@ -1,6 +1,8 @@
-
+import { link, icon } from '../pages/api/_media'
 import React, { useState } from "react";
 
+
+/* Slideshow */
 const slideIndex = [];
 for (let i = 0; i < 1; i++) {
     if (i === 10) {
@@ -46,10 +48,10 @@ function SubHero()
             <div className="subhero-container">
                 {/* buttons */}
                 <div className="btn-wrapper">
-                    <a href="/"><button className="btn" type="button">Milk Tea</button></a>
-                    <a href="/"><button className="btn" type="button">Specialty</button></a>
-                    <a href="/"><button className="btn" type="button">Matcha</button></a>
-                    <a href="/"><button className="btn" type="button">Fruit Tea</button></a>
+                    <a href="/menu#milk-tea"><button className="btn" type="button">Milk Tea</button></a>
+                    <a href="/menu#specialty"><button className="btn" type="button">Specialty</button></a>
+                    <a href="/menu#matcha"><button className="btn" type="button">Matcha</button></a>
+                    <a href="/menu#fruit-tea"><button className="btn" type="button">Fruit Tea</button></a>
                 </div>
             </div>
           <div className="sl-container">
@@ -138,7 +140,7 @@ function SubHero()
                 <div className="location-container">
                     <h1 className="location-header"> Location </h1>
                     <p className="location">{location.tacoma}</p>
-                    <a className="directions" href="">Directions</a>
+                    <a className="directions" href={link.directions}>Directions</a>
                 </div>
             </div>
             <div className="blur-background background-img"> </div>

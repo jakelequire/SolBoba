@@ -1,4 +1,11 @@
-import placeholder from '../../public/media/drinks/placeholder.png'
+
+/* 
+ * I wanted to clear up space in my components so it was easier to work with
+ * Also it just felt cleaner having my media imports in one file and reference with dot notation
+ * I'm not sure if this is the best way to do it, but it works for me
+*/
+
+import placeholder from '../../public/media/drinks/placeholder.png';
 import banana_milk from '../../public/media/drinks/banana-milk.png'
 import bloopi from '../../public/media/drinks/bloopi.png'
 import blueb_matcha from '../../public/media/drinks/blueb-matcha.png'
@@ -52,6 +59,24 @@ const drink = {
     icelevel: icelevel,
     sugarlevel: sugarlevel
 }
+export default drink
 
+export const link = {
+        facebook: 'https://www.facebook.com/SolBobaTacoma/',
+        instagram: 'https://www.instagram.com/sol_boba/',
+        yelp: 'https://www.yelp.com/biz/sol-boba-lakewood',
+        uberEats: 'https://www.ubereats.com/store/sol-boba/RAc3gNnfUui-wpJpf_eY2w',
+        directions: 'https://goo.gl/maps/cA82i2o68wMHYGuU9',
+}
 
-export default drink;
+import logo from '../../public/media/logo1.png'
+import fbIcon from '../../public/media/facebook-icon.png'
+import instaIcon from '../../public/media/instagram-icon.png'
+import yelpIcon from '../../public/media/yelp-icon.png'
+
+export const icon = {
+    logo: logo,
+    facebook: fbIcon,
+    instagram: instaIcon,
+    yelp: yelpIcon,
+}
