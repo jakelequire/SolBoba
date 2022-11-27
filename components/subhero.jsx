@@ -1,5 +1,6 @@
 import { link, icon } from '../pages/api/_media'
 import React, { useState } from "react";
+import Link from 'next/link'
 
 
 /* Slideshow */
@@ -48,10 +49,10 @@ function SubHero()
             <div className="subhero-container">
                 {/* buttons */}
                 <div className="btn-wrapper">
-                    <a href="/menu#milk-tea"><button className="btn" type="button">Milk Tea</button></a>
-                    <a href="/menu#specialty"><button className="btn" type="button">Specialty</button></a>
-                    <a href="/menu#matcha"><button className="btn" type="button">Matcha</button></a>
-                    <a href="/menu#fruit-tea"><button className="btn" type="button">Fruit Tea</button></a>
+                    <Link href="/menu#milk-tea"><button className="btn" type="button">Milk Tea</button></Link>
+                    <Link href="/menu#specialty"><button className="btn" type="button">Specialty</button></Link>
+                    <Link href="/menu#matcha"><button className="btn" type="button">Matcha</button></Link>
+                    <Link href="/menu#fruit-tea"><button className="btn" type="button">Fruit Tea</button></Link>
                 </div>
             </div>
           <div className="sl-container">

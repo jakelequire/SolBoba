@@ -6,7 +6,7 @@ import { link, icon } from '../pages/api/_media'
 import banner from '../public/media/trnsp-white.png'
 import open_banner from '../public/media/trnsp-white-open.png'
 import closed_banner from '../public/media/trnsp-white-closed.png'
-
+import Link from 'next/link'
 function Hero() {
 
     {/* Hero Banner switching from open - closed background image */}
