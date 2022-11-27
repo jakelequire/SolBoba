@@ -1,15 +1,9 @@
-
-
 /* Navbar */
-/* Navbar nav*/
 .navbar {
     background-color: #000000f2;
     height: 85px;
     text-align: right;
     justify-content: right;
-}
-
-#nav-group {
 }
 
 #nav-link {
@@ -68,39 +62,28 @@
     width: 11%;
 }
 
+/* Media Icons */
+.navbar-icons {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    margin-top: -50px;
+    margin-left: 30px;
+}
+
 .icon-image {
     display: flex;
     justify-content: left;
-    align-content: inherit;
-    margin-top: -50px;
-    margin-left: 15px;
+    gap: 10px;
 }
 
-.fb-logo {
+.fb-logo, .insta-logo, .yelp-logo {
     display: flex;
-    height: 2em;
-    width: auto;
-    padding-right: 10px;
+    height: 80%;
+    width: 80%;
 }
 
-.insta-logo {
-    display: flex;
-    height: 35px;
-    width: auto;
-    padding-right: 2px;
-    margin-top: -2px;
-}
-
-.yelp-logo {
-    display: flex;
-    height: 1.5em;
-    width: auto;
-    padding-left: 10px;
-}
-
-/* Navbar */
 /* Hero Banner */
-
 .hero-img {
     display: flex;
     overflow: hidden;
@@ -109,5 +92,3 @@
     background-color: #000c1d;
 
 }
-
-/* Hero Banner */

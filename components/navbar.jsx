@@ -3,15 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'next/image'
 
-
 import logo from '../public/media/logo1.png'
-import fbIcon from '../public/media/fb-logo.png'
-import instaIcon from '../public/media/instaLogo.png'
-import yelpIcon from '../public/media/Yelp_Logo.png'
+import fbIcon from '../public/media/facebook-icon.png'
+import instaIcon from '../public/media/instagram-icon.png'
+import yelpIcon from '../public/media/yelp-icon.png'
+
 function NavBar() {
-    const fbLink = 'https://www.facebook.com/SolBobaTacoma/'
-    const yelpLink = 'https://www.yelp.com/biz/sol-boba-lakewood'
-    const instaLink = 'https://www.instagram.com/sol_boba/'
+    const link = {
+        facebook: 'https://www.facebook.com/SolBobaTacoma/',
+        instagram: 'https://www.instagram.com/sol_boba/',
+        yelp: 'https://www.yelp.com/biz/sol-boba-lakewood'
+    }
     return (
         <Navbar className="navbar" bg="dark" variant="dark">
             <Container>
@@ -28,9 +30,9 @@ function NavBar() {
                     {/* Brand Icons ++ NOTE TO SELF: TRANSLATE IMAGES SLIGHTLY*/}
                     <Navbar.Brand className="navbar-icons">
                         <div className="icon-image">
-                            <a href={fbLink}> <Image className="fb-logo" src={fbIcon} alt="" /></a>
-                            <a href={instaLink}> <Image className="insta-logo" src={instaIcon} alt="" /></a>
-                            <a href={yelpLink}> <Image className="yelp-logo" src={yelpIcon} alt="" /></a>
+                            <a href={link.facebook}> <Image className="fb-logo" src={fbIcon} alt="" /></a>
+                            <a href={link.instagram}> <Image className="insta-logo" src={instaIcon} alt="" /></a>
+                            <a href={link.yelp}> <Image className="yelp-logo" src={yelpIcon} alt="" /></a>
                         </div>
                     </Navbar.Brand>
                 </Nav>

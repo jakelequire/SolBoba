@@ -4,21 +4,24 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'next/image'
 
 import logo from '../public/media/logo1.png'
-import fbIcon from '../public/media/fb-logo.png'
-import instaIcon from '../public/media/instaLogo.png'
-import yelpIcon from '../public/media/Yelp_Logo.png'
+import fbIcon from '../public/media/facebook-icon.png'
+import instaIcon from '../public/media/instagram-icon.png'
+import yelpIcon from '../public/media/yelp-icon.png'
 import banner from '../public/media/trnsp-white.png'
 import open_banner from '../public/media/trnsp-white-open.png'
 import closed_banner from '../public/media/trnsp-white-closed.png'
 
 function Hero() {
-    const fbLink = 'https://www.facebook.com/SolBobaTacoma/'
-    const yelpLink = 'https://www.yelp.com/biz/sol-boba-lakewood'
-    const instaLink = 'https://www.instagram.com/sol_boba/'
-
+    const link = {
+        facebook: 'https://www.facebook.com/SolBobaTacoma/',
+        instagram: 'https://www.instagram.com/sol_boba/',
+        yelp: 'https://www.yelp.com/biz/sol-boba-lakewood'
+    }
+    {/* Hero Banner switching from open - closed background image */}
     const currentHour = new Date().getHours()
     const hoursOpen = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     let arrHour = hoursOpen.includes(currentHour)
+
     return (
         <div className="Container">
             {/* Navbar */}
@@ -37,9 +40,9 @@ function Hero() {
                         {/* Brand Icons ++ NOTE TO SELF: TRANSLATE IMAGES SLIGHTLY*/}
                         <Navbar.Brand className="navbar-icons">
                             <div className="icon-image">
-                                <a href={fbLink}> <Image className="fb-logo" src={fbIcon} alt="" /></a>
-                                <a href={instaLink}> <Image className="insta-logo" src={instaIcon} alt="" /></a>
-                                <a href={yelpLink}> <Image className="yelp-logo" src={yelpIcon} alt="" /></a>
+                                <a href={link.facebook}> <Image className="fb-logo" src={fbIcon} alt="" /></a>
+                                <a href={link.instagram}> <Image className="insta-logo" src={instaIcon} alt="" /></a>
+                                <a href={link.yelp}> <Image className="yelp-logo" src={yelpIcon} alt="" /></a>
                             </div>
                         </Navbar.Brand>
                     </Nav>
