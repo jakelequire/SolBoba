@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+
+
+
 import placeholder from '../public/media/drinks/placeholder.png'
 import banana_milk from '../public/media/drinks/banana-milk.png'
 import bloopi from '../public/media/drinks/bloopi.png'
@@ -199,7 +202,13 @@ function MenuC() {
             </div>
             <div className="download-container"> 
                 <div className="download-menu">
-                    <a href="" className="menu-btn">Download Menu</a>
+                    <a
+                        href='/files/SolBoba-Menu.pdf'
+                        className="menu-btn"
+                        target="_blank"
+                        alt="Download Menu"
+                        rel="noopener noreferrer"
+                        download>Download Menu</a> 
                     </div>
              </div>
         </>

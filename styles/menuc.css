@@ -85,11 +85,6 @@
     padding-right: 20px;
 }
 
-
-.mt-img {
-}
-
-
 h3 {
     display: flex;
     font-size: 20px;
@@ -228,7 +223,6 @@ h3 {
 .st-eleven {
     grid-area: st-eleven;
 }
-
 
 /* ----- SECOND MENU ----- */
 .mt2-one, .mt2-two, .mt2-three, .mt2-four {
