@@ -197,9 +197,11 @@ function MenuC() {
                         <Image src={sugarlevel} alt="" />
                     </div>
             </div>
-            <div className="download-menu">
-                <a href="" className="menu-btn">Download Menu</a>
-            </div>
+            <div className="download-container"> 
+                <div className="download-menu">
+                    <a href="" className="menu-btn">Download Menu</a>
+                    </div>
+             </div>
         </>
     );
 }
