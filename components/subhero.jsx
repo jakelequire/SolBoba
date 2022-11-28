@@ -45,6 +45,7 @@ function SubHero()
         tacoma: '8718 S Tacoma Way B, Lakewood, WA 98499'
     }
     return (
+        <div className="subhero-wrapper">
         <div className="sub-container">
             <div className="subhero-container">
                 {/* buttons */}
@@ -145,6 +146,7 @@ function SubHero()
                 </div>
             </div>
             <div className="blur-background background-img"> </div>
+            </div>
         </div>
     );
 }
