@@ -28,7 +28,7 @@ function Hero() {
                     </Container>
                     {/* Logo */}
                     <Container className="nav-logo-container">
-                        <Nav.Link className="logo-image" >
+                        <Nav.Link className="logo-image" href="/">
                                 <Image className="img-fluid" src={icon.logo} alt="" />
                         </Nav.Link>
                     </Container>
@@ -55,62 +55,20 @@ function Hero() {
 export default Hero;
 
 /*
-    q: Why can't I move the items around in the nav-group container?
-    a: The items are in a flexbox container, and the order of the items is determined by the order of the items in the HTML.
-    q: how do I position nav-icon and nav-link?
-    a: use flexbox to position the items in the container
-    q: what properties do I need to use to position the items?
-    a: use flexbox to position the items in the container
-    q: what is the code for flexbox?
-    a: display: flex;
-    q: what is the name of the property i need to use display: flex;
-    a: flex-direction
-    q: what are the values for flex-direction?
-    a: row, column, row-reverse, column-reverse
-    q: what is the default value for flex-direction?
-    a: row
-    q: what is the id that I need to use flexbox for the nav-group container?
-    a: nav-group
-    q: i changed nav-group to flexbox and i cant change the position of the children
-    a: you need to use flexbox properties to position the children
-    q: what properties do I need to use?
-    a: justify-content, align-items, align-content
-    q: what are the values for justify-content?
-    a: flex-start, flex-end, center, space-between, space-around, space-evenly
-    q: what are the values for align-items?
-    a: flex-start, flex-end, center, baseline, stretch
-    q: what are the values for align-content?
-    a: flex-start, flex-end, center, space-between, space-around, stretch
-    q: what do I need to do to position the nav-icons to the right and nav-link to the left?
-    a: use justify-content: flex-end and justify-content: flex-start
-    q: I want to position the nav-icons to the right and nav-link to the left, but I want the nav-link to be centered vertically
-    a: use justify-content: flex-end and justify-content: flex-start and align-items: center
-    q: I turned the nav-group into a flexbox container, but the items wont reposition with justify-content: flex-end and justify-content: flex-start and align-items: center
-    a: you need to use flexbox properties to position the children
-    q: what properties do I need to use?
-    a: justify-content, align-items, align-content
-    q: I used the flexbox properties, but the items wont reposition with justify-content: flex-end and justify-content: flex-start and align-items: center
-    a: you need to use flexbox properties to position the children
-    q: which child do I need to use flexbox properties on?
-    a: the children of the flexbox container
-    q: the <Container> or <Nav.Link>?
-    a: the <Nav.Link>
-    q: I changed the flexbox properties of the children, <Nav.Link>, and it still isn't repositioning
-    a: you need to use flexbox properties to position the children
-    q: what is the HTML code for the flexbox properties?
-    a: display: flex;
-    q: what is the name of the child that needs to be flexbox?
-    a: nav-icon
-    q: nav-icon is a flexbox, is it not?
-    a: no, it is not
-    q: when you say nav-icon, are you talking about the <Nav.Link>?
+    q: why can I not move the items in the navbar?
+    a: because the navbar is a bootstrap component and it is not responsive
+    q: how can I make the navbar responsive?
+    a: I can make the navbar responsive by using the react-bootstrap component
+    q: which component should I use?
+    a: I should use the Nav component
+    q: what tags do I need to replace with the react-bootstrap component?
+    a: I need to replace the <nav> tag with the <Nav> component
+    q: what line is there a <nav> tag?
+    a: line 10
+    q: on this current doc?
     a: yes
-    q: I changed the <Nav.Link> to flexbox, but it still isn't repositioning
-    a: you need to use flexbox properties to position the children
-    q: when you say nav-icon, does it matter if I use the className or the Id?
-    a: no, it does not
-    q: I put .nav-icon {display: flex;} in the CSS, but it still isn't repositioning
-    a: you need to use flexbox properties to position the children
-    q: it's written in the css that it is a flex
-    a: you need to use flexbox properties to position the children
+    q: on line 10 that is the start of the function, not a <nav> tag tho?
+    a: yes, but the <nav> tag is on line 11
+    q: I don't see anything on line 11, it is blank
+    a: yes, but the <nav> tag is on line 12
 */
