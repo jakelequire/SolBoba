@@ -2,10 +2,11 @@
     background-size: cover;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #0c0c0c
 }
 
 .sub-container {
@@ -38,7 +39,7 @@
     font-size: 25px;
     font-weight: 500;
     color: #d600ff;
-    background-color: transparent;
+    background-color: #101010;
     border: 3px solid;
     justify-content: center;
     align-items: center;
@@ -62,6 +63,7 @@
 .slideshow-container {
     align-items: center;
     display: inline-flex;
+    background-color: #191919;
     flex-direction: column;
     justify-content: center;
     height: fit-content;
@@ -69,7 +71,7 @@
 }
 
 .sl-container {
-    display: inline-flex;
+    display: flex;
     font-family: 'Josefin Sans';
     font-weight: 300;
     justify-content: center;
@@ -77,6 +79,7 @@
     height: fit-content;
     width: auto;
     gap: 5em;
+    padding-bottom: 5em;
 }
 
 .button-container {
@@ -86,6 +89,7 @@
     position: absolute;
     gap: 21em;
 }
+
 
 .sl-btn {
     cursor: pointer;
@@ -126,8 +130,8 @@
 }
 
 .activeOne {
-    background-color: #1414147f;
-    border: 4px solid;
+    background-color: #191919;
+    border: 3px solid;
     border-color: #d600ff;
     border-radius: 10px;
     height: 400px;
@@ -135,8 +139,8 @@
 }
 
 .activeTwo {
-    background-color: #1414147f;
-    border: 4px solid;
+    background-color: #191919;
+    border: 3px solid;
     border-color: #d600ff;
     border-radius: 10px;
     height: 400px;
@@ -202,9 +206,11 @@
 }
 /* Dots */
 .dots-container {
-    display: inline-flex;
+    display: flex;
+    height: fit-content;
+    width: auto;
     position: absolute;
-    bottom: -18.5em;
+    padding-top: 21.5em;
 }
 
 .dots {
@@ -242,8 +248,8 @@
     align-self: unset;
     display: inline-flex;
     font-weight: 400;
-    background-color: #1414147f;
-    border: 4px solid;
+    background-color: #191919;
+    border: 3px solid;
     border-color: #d600ff;
     border-radius: 10px;
     height: 400px;

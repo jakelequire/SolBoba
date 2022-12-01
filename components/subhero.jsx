@@ -132,8 +132,8 @@ function SubHero()
             </div>{/* Button Function Container */}
             
             <div className="dots-container">
-                <div className="dots" id={index === 0 ? 'dots-one' : ''}> </div>
-                <div className="dots" id={index === 1 ? 'dots-two' : '' }> </div>
+                <a className="dots" id={index === 0 ? 'dots-one' : ''}> </a>
+                <a className="dots" id={index === 1 ? 'dots-two' : '' }> </a>
                 </div>
             </div>
             <div className="static-background">
@@ -153,3 +153,14 @@ function SubHero()
 }
 
 export default SubHero;
+
+/* 
+    q: why won't the button-container align with the parent flexbox?
+    q: why won't the dots-container align with the parent flexbox?
+    a: the parent flexbox is not a flexbox, it's a grid.
+    q: what is the name of the grid?
+    a: the grid is called "sl-container"
+
+
+
+*/
