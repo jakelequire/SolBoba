@@ -2,26 +2,33 @@
     background-size: cover;
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sub-container {
-    margin-left: 17.5%;
-    margin-right: 17.5%;
-}
-
-.subhero-container {
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 
 .btn-wrapper {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    grid-row-gap: 10px;
-    margin-top: 40px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    gap: 2em;
+}
+
+.a-btn {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
 }
 
 .btn {
@@ -56,19 +63,28 @@
     align-items: center;
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: auto;
 }
 
 .sl-container {
     display: inline-flex;
     font-family: 'Josefin Sans';
     font-weight: 300;
-    margin-top: 5em;
-    margin-right: 6%;
-    margin-left: 6%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: auto;
+    gap: 5em;
 }
 
 .button-container {
-    margin-top: -13.5em;
+    display: flex;
+    height: fit-content;
+    width: auto;
+    position: absolute;
+    gap: 21em;
 }
 
 .sl-btn {
@@ -83,15 +99,18 @@
 
 #left {
     display: inline-flex;
-    margin-right: 13em;
     padding: 5px 10px 5px 10px;
     border-radius: 3px 0 0 3px;
+    height: fit-content;
+    width: auto;
 }
 
 #right {
     display: inline-flex;
     padding: 5px 10px 5px 10px;
     border-radius: 0 3px 3px 0;
+    height: fit-content;
+    width: auto;
 }
 
 #left:hover, #right:hover {
@@ -184,7 +203,8 @@
 /* Dots */
 .dots-container {
     display: inline-flex;
-    margin-top: 14.5vh;
+    position: absolute;
+    bottom: -18.5em;
 }
 
 .dots {
@@ -221,8 +241,6 @@
     align-items: center;
     align-self: unset;
     display: inline-flex;
-    margin-top: -9.6%;
-    margin-left: 12%;
     font-weight: 400;
     background-color: #1414147f;
     border: 4px solid;

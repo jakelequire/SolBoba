@@ -46,19 +46,18 @@ function SubHero()
     }
     return (
         <div className="subhero-wrapper">
-        <div className="sub-container">
-            <div className="subhero-container">
-                {/* buttons */}
-                <div className="btn-wrapper">
-                    <Link href="/menu#milk-tea"><button className="btn" type="button">Milk Tea</button></Link>
-                    <Link href="/menu#specialty"><button className="btn" type="button">Specialty</button></Link>
-                    <Link href="/menu#matcha"><button className="btn" type="button">Matcha</button></Link>
-                    <Link href="/menu#fruit-tea"><button className="btn" type="button">Fruit Tea</button></Link>
-                </div>
+            <div className="sub-container">
+                    {/* buttons */}
+                 <div className="btn-wrapper">
+                     <Link className="a-btn" href="/menu#milk-tea"><button className="btn" type="button">Milk Tea</button></Link>
+                     <Link className="a-btn" href="/menu#specialty"><button className="btn" type="button">Specialty</button></Link>
+                     <Link className="a-btn" href="/menu#matcha"><button className="btn" type="button">Matcha</button></Link>
+                     <Link className="a-btn" href="/menu#fruit-tea"><button className="btn" type="button">Fruit Tea</button></Link>
+                 </div>
             </div>
-          <div className="sl-container">
+            <div className="sl-container">
+                <div className="slideshow-container">
             {/* Slideshow Background */}
-            <div className="slideshow-container">
                 {slideIndex.map((i) => (
                     <div key={index} className={ index === 0 ? 'activeOne' : 'none'}>
                         <div className="hours-container fade" >
@@ -135,18 +134,20 @@ function SubHero()
             <div className="dots-container">
                 <div className="dots" id={index === 0 ? 'dots-one' : ''}> </div>
                 <div className="dots" id={index === 1 ? 'dots-two' : '' }> </div>
-            </div>
-            </div>
-            </div> {/* sl-container */}
-            <div className="static-background">
-                <div className="location-container">
-                    <h1 className="location-header"> Location </h1>
-                    <p className="location">{location.tacoma}</p>
-                    <a className="directions" href={link.directions}>Directions</a>
                 </div>
             </div>
-            <div className="blur-background background-img"> </div>
-            </div>
+            <div className="static-background">
+                  <div className="location-container">
+                      <h1 className="location-header"> Location </h1>
+                      <p className="location">{location.tacoma}</p>
+                      <a className="directions" href={link.directions}>Directions</a>
+                  </div>
+             </div>
+
+                
+           </div> {/* sl-container */}
+
+            
         </div>
     );
 }
