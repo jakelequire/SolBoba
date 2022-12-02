@@ -15,6 +15,8 @@
 }
 
 .navbar {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000000f2;
     height: 85px;
     justify-content: space-around;
@@ -31,6 +33,7 @@
 
 #nav-link {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     font-family: 'Josefin Sans';
     font-size: 25px;
@@ -55,6 +58,7 @@
 
 #nav-order {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     background-color: #d600ff;
     font-family: 'Josefin Sans';
@@ -93,6 +97,7 @@
 .nav-icon {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .nav-logo-container {
@@ -104,6 +109,7 @@
 .logo-image {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-links-container {
@@ -115,6 +121,7 @@
 .nav-link {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 /* Media Icons */
@@ -128,11 +135,13 @@
 .fb-logo, .insta-logo, .yelp-logo {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Hero Banner */
 .hero-img {
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     min-width: 100vw;
     height: auto;

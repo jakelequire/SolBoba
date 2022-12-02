@@ -5,12 +5,14 @@
     height: auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #0c0c0c
 }
 
 .sub-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 100vw;
@@ -21,6 +23,7 @@
 
 .btn-wrapper {
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
     justify-content: center;
     gap: 2em;
@@ -30,6 +33,7 @@
     color: inherit;
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -63,6 +67,7 @@
 .slideshow-container {
     align-items: center;
     display: inline-flex;
+    flex-wrap: wrap;
     background-color: #191919;
     flex-direction: column;
     justify-content: center;
@@ -72,6 +77,7 @@
 
 .sl-container {
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Josefin Sans';
     font-weight: 300;
     justify-content: center;
@@ -84,6 +90,7 @@
 
 .button-container {
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
     width: auto;
     position: absolute;
@@ -171,6 +178,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     text-decoration: underline;
     text-underline-offset: 12px;
     
@@ -248,6 +256,7 @@
     align-items: center;
     align-self: unset;
     display: inline-flex;
+    flex-wrap: wrap;
     font-weight: 400;
     background-color: #191919;
     border: 3px solid;
@@ -290,6 +299,7 @@
 
 .location {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-size: 30px;
