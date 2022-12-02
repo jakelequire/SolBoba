@@ -14,13 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-          <main className={styles.main}>
-              <div className="homepage hero-container"> 
-                  <Hero> </Hero>
-                  <SubHero> </SubHero>
-              </div>
+      <main className={styles.main}>
+          <div className="homepage hero-container"> 
+              <Hero> </Hero>
+              <SubHero> </SubHero>
+          </div>
 
-          </main>
+      </main>
 
       <footer className={styles.footer}>
 

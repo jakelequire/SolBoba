@@ -53,22 +53,3 @@ function Hero() {
 }
 
 export default Hero;
-
-/*
-    q: why can I not move the items in the navbar?
-    a: because the navbar is a bootstrap component and it is not responsive
-    q: how can I make the navbar responsive?
-    a: I can make the navbar responsive by using the react-bootstrap component
-    q: which component should I use?
-    a: I should use the Nav component
-    q: what tags do I need to replace with the react-bootstrap component?
-    a: I need to replace the <nav> tag with the <Nav> component
-    q: what line is there a <nav> tag?
-    a: line 10
-    q: on this current doc?
-    a: yes
-    q: on line 10 that is the start of the function, not a <nav> tag tho?
-    a: yes, but the <nav> tag is on line 11
-    q: I don't see anything on line 11, it is blank
-    a: yes, but the <nav> tag is on line 12
-*/

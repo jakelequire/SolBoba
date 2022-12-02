@@ -134,7 +134,7 @@
 .hero-img {
     display: flex;
     overflow: hidden;
-    max-width: 100vw;
+    min-width: 100vw;
     height: auto;
     background-color: #000c1d;
     justify-content: center;

@@ -11,7 +11,6 @@ function MenuC() {
             </div>
             <div className="menuhp-wrapper">
                 <div className="int-menu-container">
-                
                     {/* Milk Tea Menu */}
                     <div className="milktea-header">
                         <div className="mt-header" id="milk-tea">
