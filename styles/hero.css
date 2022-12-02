@@ -18,13 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #000000f2;
-    height: 85px;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
     justify-content: space-around;
 }
 #nav-group {
     display: flex;
     width: 100vw;
-    height: 85px;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
