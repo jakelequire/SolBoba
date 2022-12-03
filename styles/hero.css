@@ -99,6 +99,7 @@
     justify-content: flex-start;
     width: 30%;
     flex-wrap: wrap;
+    max-width: 30%;
 }
 .nav-icon {
     display: flex;
