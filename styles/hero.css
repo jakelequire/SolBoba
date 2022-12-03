@@ -118,6 +118,13 @@
     flex-wrap: wrap;
 }
 
+.img-fluid {
+    color: transparent;
+    padding-right: 10px;
+    padding-left: 10px;
+    object-fit: contain;
+}
+
 .nav-links-container {
     display: flex;
     justify-content: flex-end;
