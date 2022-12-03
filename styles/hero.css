@@ -15,14 +15,20 @@
 }
 
 .navbar {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000000f2;
-    height: 85px;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
     justify-content: space-around;
 }
 #nav-group {
     display: flex;
     width: 100vw;
-    height: 85px;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
@@ -33,6 +39,7 @@
 
 #nav-link {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     font-family: 'Josefin Sans';
     font-size: 25px;
@@ -57,6 +64,7 @@
 
 #nav-order {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     background-color: #d600ff;
     font-family: 'Josefin Sans';
@@ -95,6 +103,7 @@
 .nav-icon {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .nav-logo-container {
@@ -106,6 +115,7 @@
 .logo-image {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-links-container {
@@ -117,6 +127,7 @@
 .nav-link {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 /* Media Icons */
@@ -124,6 +135,7 @@
 .fb-logo, .insta-logo, .yelp-logo {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .fb-logo {
@@ -144,6 +156,7 @@
 /* Hero Banner */
 .hero-img {
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     min-width: 100vw;
     height: auto;
