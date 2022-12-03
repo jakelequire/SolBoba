@@ -85,14 +85,15 @@
 
 #nav-icon {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     font-family: 'Josefin Sans';
     font-size: 25px;
     font-weight: 400;
     padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
-
 
 .nav-icon-container {
     display: flex;
