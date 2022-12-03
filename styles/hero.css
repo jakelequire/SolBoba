@@ -27,6 +27,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    align-content: space-around;
+    object-fit: contain;
 }
 
 #nav-link {
@@ -118,16 +120,25 @@
 }
 
 /* Media Icons */
-.navbar-icons {
-}
-
-.icon-image {
-
-}
 
 .fb-logo, .insta-logo, .yelp-logo {
     display: flex;
     justify-content: center;
+}
+
+.fb-logo {
+    width: 80%;
+    object-fit: contain;
+}
+
+.insta-logo {
+    width: 80%;
+    object-fit: contain;
+}
+
+.yelp-logo {
+    width: 80%;
+    object-fit: contain;
 }
 
 /* Hero Banner */
