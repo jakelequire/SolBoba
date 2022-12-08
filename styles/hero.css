@@ -1,4 +1,54 @@
 /* Navbar */
+
+@media all and (min-width:321px) and (max-width: 959px) {
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000f2;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    justify-content: space-around;
+}
+#nav-group {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    object-fit: contain;
+}
+
+.nav-icon-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    flex-wrap: wrap;
+    max-width: 30%;
+}
+.nav-icon {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.nav-logo-container {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    flex-wrap: wrap;
+}
+
+}
+
+
+
 .hero-container {
     width: 100%;
     height: 100%;
@@ -66,7 +116,7 @@
     display: flex;
     flex-wrap: wrap;
     color: #fff;
-    background-color: #d600ff;
+    background-color: #8C04A8;
     font-family: 'Josefin Sans';
     font-size: 20px;
     font-weight: 400;
@@ -80,7 +130,7 @@
 }
 
     #nav-order:hover {
-        background-color: #00b8ff
+        background-color: #4811AE;
     }
 
 #nav-icon {
@@ -130,7 +180,7 @@
 .nav-links-container {
     display: flex;
     justify-content: flex-end;
-    width: 30%;
+    width: 40%;
     flex-wrap: wrap;
 }
 .nav-link {
@@ -169,7 +219,7 @@
     overflow: hidden;
     min-width: 100vw;
     height: auto;
-    background-color: #000c1d;
+    background-color: #1C0449;
     justify-content: center;
-    border-bottom: 1px solid #d600ff;
+    border-bottom: 1px solid #8C04A8;
 }

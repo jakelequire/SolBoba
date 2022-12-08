@@ -28,6 +28,7 @@ function NavBar() {
                     {/* Site Links */}
                     <Container className="nav-links-container">
                         <Nav.Link id="nav-link" className="nav-link" href="/menu">Menu</Nav.Link>
+                        <Nav.Link id="nav-link" className="nav-link" href="/contact">Contact Us</Nav.Link>
                         <Nav.Link id="nav-link" className="nav-link" href={link.yelp}>Reviews</Nav.Link>
                         <Nav.Link id="nav-order" className="nav-link" href={link.uberEats}>ORDER ONLINE</Nav.Link>
                     </Container>
