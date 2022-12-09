@@ -41,6 +41,7 @@ function Hero() {
                     {/* Site Links */}
             <Container className="nav-links-container">
                 <Nav.Link id="nav-link" className="nav-link" href="/menu">Menu</Nav.Link>
+                <Nav.Link id="nav-link" className="nav-link" href="/contact">Contact Us</Nav.Link>
                 <Nav.Link id="nav-link" className="nav-link" href={link.yelp}>Reviews</Nav.Link>
                 <Nav.Link id="nav-order" className="nav-link" href={link.uberEats}>ORDER ONLINE</Nav.Link>
             </Container>
@@ -51,7 +52,8 @@ function Hero() {
             {/* Hero */}
             <div className="hero-wrapper">
                 <div className="hero-img">
-                    <Image priority src={arrHour === true ? open_banner : closed_banner} alt={banner} />
+                    <Image priority src={banner} alt="Sol Boba Banner" />
+                    {/* <Image priority src={arrHour === true ? open_banner : closed_banner} alt={banner} /> */}
                 </div>
             </div>
         </div>

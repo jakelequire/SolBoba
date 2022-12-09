@@ -6,6 +6,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(to right, #252525, #000000);
     display: block;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -28,7 +29,7 @@ a {
     height: auto;
     width: 100%;
     color: white;
-    background: #101010;
+    background: linear-gradient(to right, #252525, #000000);
     overflow-x: hidden;
   }
 }

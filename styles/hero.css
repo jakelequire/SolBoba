@@ -5,7 +5,7 @@
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    background-color: #000000f2;
+    background: linear-gradient(to right, rgb(0, 0, 139), rgb(128, 128, 128));
     height: fit-content;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -67,7 +67,7 @@
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    background-color: #000000f2;
+    background: linear-gradient(to right, #000020, #000000, #000020);
     height: fit-content;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -92,10 +92,10 @@
     flex-wrap: wrap;
     color: #fff;
     font-family: 'Josefin Sans';
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     margin-right: 15px;
-    padding: 10px;
+    padding: 5px;
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: #808080;
@@ -116,7 +116,7 @@
     display: flex;
     flex-wrap: wrap;
     color: #fff;
-    background-color: #8C04A8;
+    background-color:  #114a82;
     font-family: 'Josefin Sans';
     font-size: 20px;
     font-weight: 400;
@@ -130,7 +130,7 @@
 }
 
     #nav-order:hover {
-        background-color: #4811AE;
+        background-color: #1f77cf;
     }
 
 #nav-icon {
@@ -148,9 +148,8 @@
 .nav-icon-container {
     display: flex;
     justify-content: flex-start;
-    width: 30%;
+    width: 40%;
     flex-wrap: wrap;
-    max-width: 30%;
 }
 .nav-icon {
     display: flex;
@@ -161,7 +160,7 @@
 .nav-logo-container {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 20%;
     flex-wrap: wrap;
 }
 .logo-image {
@@ -179,9 +178,11 @@
 
 .nav-links-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 40%;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 .nav-link {
     display: flex;
@@ -219,7 +220,7 @@
     overflow: hidden;
     min-width: 100vw;
     height: auto;
-    background-color: #1C0449;
+    background-color:#8ac5d8;
     justify-content: center;
-    border-bottom: 1px solid #8C04A8;
+    border-bottom: 1px solid #114a82;
 }
