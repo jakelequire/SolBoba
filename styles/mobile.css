@@ -1,0 +1,23 @@
+
+
+
+@media (min-width: 480px) and (max-width: 600px) {
+    .nav-icon-container {
+        display: none;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    
+}

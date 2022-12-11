@@ -1,20 +1,10 @@
-/* Navbar */
 
-
-/* Viewport Specific*/
-@media (max-width: 768px) {
-    .nav-icon-container {
-        display: none;
-    }
-    
-    .nav-icon {
-        display: none;
-    }
-
+.Container {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.5s ease;
 }
-/* Viewport Specific*/
-
-
 
 .hero-container {
     width: 100%;
@@ -24,13 +14,8 @@
     transition: all 0.5s ease;
 }
 
-.Container {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    transition: all 0.5s ease;
-}
 
+/* Navigation Bar */
 .navbar {
     display: flex;
     flex-wrap: wrap;
