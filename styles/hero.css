@@ -11,15 +11,12 @@
 
     }
 
-    .nav-icon-container, #nav-icon, .nav-icon {
+    .nav-icon-container, .nav-logo-container, .nav-icon {
         display: none;
     }
-    .nav-icon {
 
-    }
-    
-    .nav-logo-container {
-
+    .fb-logo, .insta-logo, .yelp-logo {
+        display: none;
     }
 }
 /* Viewport Specific*/
