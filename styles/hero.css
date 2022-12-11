@@ -2,22 +2,15 @@
 
 
 /* Viewport Specific*/
-@media (max-width: 600px) {
-
-    .navbar {
-
+@media (max-width: 768px) {
+    .nav-icon-container {
+        display: none;
     }
-    #nav-group {
-
-    }
-
-    .nav-icon-container, .nav-logo-container, .nav-icon {
+    
+    .nav-icon {
         display: none;
     }
 
-    .fb-logo, .insta-logo, .yelp-logo {
-        display: none;
-    }
 }
 /* Viewport Specific*/
 
