@@ -8,8 +8,6 @@
 }
 
 /* Mobile CSS */
-
-
 @media (max-width: 768px) {
     .nav-icon, .nav-icon-container, .nav-links-container, .nav-logo-container {
         display: none;
@@ -78,19 +76,30 @@
         height: 150px;
         width: 250px;
         justify-content: center;
+        transition: all 1.2s ease-in;
     }
 
     .dropdown-item {
         padding-bottom: 5px;
         padding-top: 5px;
         border-radius: 5px;
+
+    }
+        .dropdown-item:hover {
+            background-color: #2a94ff;
+        }
+    #dd-item {
+        width: inherit;
+        display: flex;
+        justify-content: center;
         -moz-transition: all .2s ease-in;
         -o-transition: all .2s ease-in;
         -webkit-transition: all .2s ease-in;
         transition: all .2s ease-in;
     }
-        .dropdown-item:hover {
+        #dd-item:hover {
             background-color: #2a94ff;
+            background-position: center 10px;
         }
 }
 

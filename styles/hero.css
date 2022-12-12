@@ -131,11 +131,12 @@
 
 .nav-links-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 40%;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    padding-right: 1em;
 }
 .nav-link {
     display: flex;

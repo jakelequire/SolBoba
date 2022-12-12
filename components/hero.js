@@ -38,10 +38,10 @@ function Hero() {
                         </button>
                         {menuOpen && (
                             <div className="dropdown-menu">
-                                <a href="">Menu</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Reviews</a>
-                                <a href="">Order Online</a>
+                                <a id="dd-item" href="">Menu</a>
+                                <a id="dd-item" href="">Contact Us</a>
+                                <a id="dd-item" href="">Reviews</a>
+                                <a id="dd-item" href="">Order Online</a>
                             </div>
                         )}
                         
