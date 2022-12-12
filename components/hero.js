@@ -15,7 +15,13 @@ function Hero() {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
-
+    useEffect(() => {
+    document.addEventListener('click', (event) => {
+        if (!event.target.matches('.navbar-toggler') && menuOpen) {
+          setMenuOpen(false);
+        }
+    });
+    }, [menuOpen]);
     
     return (
         <div className="Container">
