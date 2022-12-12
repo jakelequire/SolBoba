@@ -1,21 +1,107 @@
-
-
-
-@media (min-width: 480px) and (max-width: 600px) {
-    .nav-icon-container {
+/* Desktop + */
+@media (min-width: 768px) {
+    .mobile-menu {
         display: none;
     }
 
-    .nav-icon {
+
+}
+
+/* Mobile CSS */
+
+
+@media (max-width: 768px) {
+    .nav-icon, .nav-icon-container, .nav-links-container, .nav-logo-container {
         display: none;
     }
+
+    .mobile-logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+        padding: 7px 10px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+    }
+
+        .navbar-toggler::before,
+        .navbar-toggler::after {
+            content: "";
+            display: block;
+            background-color: #333;
+            height: 3px;
+            width: 25px;
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-toggler::before {
+            transform: translateY(-8px) rotate(45deg);
+        }
+
+        .navbar-toggler::after {
+            transform: translateY(5px) rotate(-45deg);
+        }
+
+        /* Add this class to switch to the arrow icon when the navigation is open */
+        .navbar-toggler.open {
+            transform: rotate(180deg);
+        }
+
+            .navbar-toggler.open::before {
+                transform: rotate(45deg) translateY(5px);
+            }
+
+            .navbar-toggler.open::after {
+                transform: rotate(-45deg) translateY(-5px);
+            }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: visible;
+        background-color: #00172e;
+        font-size: 22px;
+        position: absolute;
+        right: 0;
+        line-height: 150%;
+        bottom: 73%;
+        height: 150px;
+        width: 250px;
+        justify-content: center;
+    }
+
+    .dropdown-item {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 5px;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+    }
+        .dropdown-item:hover {
+            background-color: #2a94ff;
+        }
 }
 
 
-@media (min-width: 601px) and (max-width: 768px) {
-    
-    
-}
+
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     
