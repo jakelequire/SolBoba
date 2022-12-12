@@ -25,7 +25,11 @@ function Hero() {
                 <Nav id="nav-group" >
                     {/* Mobile Dropdown Menu */}
                     <div key="dropdown-1" className="mobile-menu">
-                        <button className="navbar-toggler" id="menu-button mobile-menu" onClick={() => setMenuOpen(!menuOpen)} />
+                        <button className="navbar-toggler" id="menu-button mobile-menu" onClick={() => setMenuOpen(!menuOpen)}>
+                            <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
                         {menuOpen && (
                             <div className="dropdown-menu">
                                 <a href="">Menu</a>

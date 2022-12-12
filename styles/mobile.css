@@ -28,48 +28,38 @@
     }
 
     .navbar-toggler {
-        display: inline-block;
-        padding: 7px 10px;
+        width: 40px;
+        height: 32px;
         background-color: transparent;
         border: 0;
-        cursor: pointer;
         position: absolute;
-        right: 0;
-        bottom: 94%;
+        cursor: pointer;
+        padding: 20px;
+        top: 20px;
+        right: 5%;
     }
 
-        .navbar-toggler::before,
-        .navbar-toggler::after {
-            content: "";
-            display: block;
-            background-color: #333;
+        .navbar-toggler .navbar-toggler-icon {
+            position: absolute;
+            width: 100%;
             height: 3px;
-            width: 25px;
+            background-color: #fff;
             border-radius: 3px;
-            transition: all 0.3s ease-in-out;
         }
 
-        .navbar-toggler::before {
-            transform: translateY(-8px) rotate(45deg);
-        }
-
-        .navbar-toggler::after {
-            transform: translateY(5px) rotate(-45deg);
-        }
-
-        /* Add this class to switch to the arrow icon when the navigation is open */
-        .navbar-toggler.open {
-            transform: rotate(180deg);
-        }
-
-            .navbar-toggler.open::before {
-                transform: rotate(45deg) translateY(5px);
+            .navbar-toggler .navbar-toggler-icon:nth-child(1) {
+                top: 0;
             }
 
-            .navbar-toggler.open::after {
-                transform: rotate(-45deg) translateY(-5px);
+            .navbar-toggler .navbar-toggler-icon:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
             }
 
+            .navbar-toggler .navbar-toggler-icon:nth-child(3) {
+                bottom: 0;
+            }
+            
     .dropdown-menu {
         display: flex;
         flex-direction: column;
