@@ -29,7 +29,7 @@ a {
     height: auto;
     width: 100%;
     color: white;
-    background: linear-gradient(to right, #252525, #000000);
+    background: #0c0c0c;
     overflow-x: hidden;
   }
 }
