@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import ContactUs from '../components/contactus.jsx';
 import NavBar from '../components/navbar.jsx'
 
 export default function Contact() {
@@ -19,9 +20,9 @@ export default function Contact() {
       </Head>
 
           <main className={styles.main}>
-              <div className="menu-homepager">
+              <div className="contact-page">
                   <NavBar> </NavBar>
-
+                  <ContactUs> </ContactUs>
               </div>
           </main>
       <footer className={styles.footer}>

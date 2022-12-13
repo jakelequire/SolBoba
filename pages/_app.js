@@ -3,6 +3,7 @@ import '../styles/hero.css'
 import '../styles/subhero.css'
 import '../styles/menuc.css'
 import '../styles/mobile.css';
+import '../styles/contactus.css';
 import 'react'
 import 'react-bootstrap'
 
