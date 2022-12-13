@@ -102,6 +102,18 @@ input, textarea {
     box-sizing: border-box;
 }
 
+.f-items {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .submit-btn {
     font-size: 16px;
     padding: 10px 20px;

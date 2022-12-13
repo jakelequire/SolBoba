@@ -18,14 +18,22 @@ function ContactUs() {
 
                 <Container className="form-container">
                     <form>
-                        <label htmlFor="name">Name:</label><br />
-                        <input type="text" id="name" name="name" /><br />
-                        <label htmlFor="email">Email:</label><br />
-                        <input type="text" id="email" name="email" /><br />
-                        <label htmlFor="subject">Subject:</label><br />
-                        <input type="text" id="subject" name="subject" /><br />
-                        <label htmlFor="message">Message:</label><br />
-                        <textarea id="message" name="message" rows="5" cols="30" /><br />
+                        <span className="f-items">
+                            <label htmlFor="name">Name:</label>
+                            <input type="text" id="name" name="name" />
+                        </span>
+                        <span className="f-items">
+                            <label htmlFor="email">Email:</label>
+                            <input type="text" id="email" name="email" />
+                        </span>
+                        <span className="f-items">
+                            <label htmlFor="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" />
+                        </span>
+                        <span className="f-items">
+                            <label htmlFor="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" cols="30" />
+                        </span>
                         <button className="submit-btn" type="submit">Submit</button>
                      </form>                
                 </Container>
