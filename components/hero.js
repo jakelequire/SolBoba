@@ -22,7 +22,7 @@ function Hero() {
         }
     });
     }, [menuOpen]);
-    
+
     return (
         <div className="Container">
             {/* Navbar */}
