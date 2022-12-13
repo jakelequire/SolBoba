@@ -132,8 +132,8 @@ function SubHero()
             </div>{/* Button Function Container */}
             
             <div className="dots-container">
-                <a className="dots" id={index === 0 ? 'dots-one' : ''}> </a>
-                <a className="dots" id={index === 1 ? 'dots-two' : '' }> </a>
+                <a className="dots" id={index === 0 ? 'dots-one' : ''} onClick={() => setIndex(0)}> </a>
+                <a className="dots" id={index === 1 ? 'dots-two' : '' } onClick={() => setIndex(0)}> </a>
                 </div>
             </div>
             <div className="static-background">
