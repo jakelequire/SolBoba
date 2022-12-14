@@ -43,7 +43,7 @@
 #nav-link {
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: #b2b2b2;
     font-family: 'Josefin Sans';
     font-size: 22px;
     font-weight: 400;
@@ -59,7 +59,7 @@
 }
 
     #nav-link:hover {
-        color: #00ffff;
+        color: #fff;
         text-decoration: underline;
         text-underline-offset: 5px;
         text-decoration-color: #fff;

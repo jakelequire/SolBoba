@@ -35,7 +35,7 @@ function ContactUs() {
                             <textarea id="message" name="message" rows="5" cols="30" />
                         </span>
                         <button className="submit-btn" type="submit">Submit</button>
-                     </form>                
+                    </form>
                 </Container>
             </div>
         </Container>

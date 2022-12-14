@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #0c0c0c
+    background-color: #1e1e1e
 }
 
 .sub-container {
@@ -42,12 +42,12 @@
     font-family: 'Josefin Sans';
     font-size: 25px;
     font-weight: 500;
-    color: #186fc6;
-    background-color: #101010;
-    border: 3px solid;
+    color: #1d2d5c;
+    background-color: #c1c1c1;
+    border: 4px solid;
     justify-content: center;
     align-items: center;
-    border-color:  #114a82;
+    border-color: #000000;
     border-radius: 5px;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -57,7 +57,7 @@
 
     .btn:hover {
         color: white;
-        background-color: #114a82;
+        background-color: #1d2d5c;
     }
 
 
@@ -68,7 +68,7 @@
     align-items: center;
     display: inline-flex;
     flex-wrap: wrap;
-    background-color: #191919;
+    background-color: transparent;
     flex-direction: column;
     justify-content: center;
     height: fit-content;
@@ -110,6 +110,7 @@
 
 #left {
     display: inline-flex;
+    color: #000;
     padding: 5px 10px 5px 10px;
     border-radius: 3px 0 0 3px;
     height: fit-content;
@@ -118,15 +119,17 @@
 
 #right {
     display: inline-flex;
+    color: #000;
     padding: 5px 10px 5px 10px;
     border-radius: 0 3px 3px 0;
     height: fit-content;
     width: auto;
 }
 
-#left:hover, #right:hover {
-    background-color: #114a82;
-}
+    #left:hover, #right:hover {
+        color: #c1c1c1;
+        background-color: #1d2d5c;
+    }
 
 /* Slideshow Background */
 .hours-container {
@@ -138,18 +141,15 @@
 }
 
 .activeOne {
-    background-color: #191919;
-    border: 3px solid;
-    border-color: #114a82;
+    background-color: #c1c1c1;
     border-radius: 10px;
     height: 400px;
     width: 425px;
 }
 
 .activeTwo {
-    background-color: #191919;
-    border: 3px solid;
-    border-color: #114a82;
+    background-color: #c1c1c1;
+    color: #000;
     border-radius: 10px;
     height: 400px;
     width: 425px;
@@ -177,16 +177,17 @@
 .sl-header {
     justify-content: center;
     align-items: center;
+    color: #000;
     display: flex;
     flex-wrap: wrap;
     text-decoration: underline;
     text-underline-offset: 12px;
-    
 }
 
 .sl-hours {
     border-collapse: collapse;
     justify-content: center;
+    color: #000;
     display: grid;
     text-align: center;
     justify-content: center;
@@ -200,6 +201,7 @@
 
 .hours-container {
     margin-top: -2.5vh;
+    color: #000;
     font-size: 19px;
 }
 
@@ -207,6 +209,7 @@
     font-size: 19px;
     text-align: center;
     margin-top: -2.5vh;
+    color: #000;
 }
 
 #text-ul {
@@ -229,7 +232,7 @@
     border-radius: 50%;
     margin: 5px;
     border: 3px solid;
-    border-color: white;
+    border-color: #000;
     cursor: pointer;
     transition: background-color 0.4s ease;
 }
@@ -238,11 +241,11 @@
     }
 
 #dots-one {
-    background-color: white;
+    background-color: #000000;
     transition: background-color 0.9s ease;
 }
 #dots-two {
-    background-color: white;
+    background-color: #000000;
     transition: background-color 0.9s ease;
 }
     #dots-one:active, #dots-two:active {
@@ -257,9 +260,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     font-weight: 400;
-    background-color: #191919;
-    border: 4px solid;
-    border-color: #114a82;
+    background-color: #c1c1c1;
     border-radius: 10px;
     height: 400px;
     width: 425px;
@@ -276,6 +277,7 @@
 
 .location-header {
     justify-content: center;
+    color: #000;
     align-items: center;
     display: flex;
     font-size: 40px;
@@ -299,6 +301,7 @@
 .location {
     display: flex;
     flex-wrap: wrap;
+    color: #000;
     justify-content: center;
     text-align: center;
     font-size: 30px;
@@ -313,8 +316,9 @@
     align-items: center;
     justify-self: center;
     font-size: 19px;
+    color: black;
     border: 3px solid;
-    border-color: #114a82;
+    border-color: #000;
     border-radius: 5px;
     height: 60px;
     width: 150px;
@@ -324,7 +328,7 @@
     transition: all .2s ease-in;
 }
     .directions:hover {
-        background-color: #114a82;
+        background-color: #1d2d5c;
         color: white;
         font-weight: 500;
     }
