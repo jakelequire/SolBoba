@@ -56,7 +56,7 @@ function NavBar() {
                             <Image className="insta-logo" src={icon.instagram} alt="" />
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.yelp}>
-                            <Image className="yelp-logo" src={icon.yelp} alt="" />
+                            <Image className="yelp-logo"  src={icon.yelp, width="50", height="50"} alt="" />
                         </Nav.Link>
                     </Container>
                             {/* Logo */}

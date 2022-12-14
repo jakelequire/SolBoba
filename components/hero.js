@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Dropdown } from 'react-bootstrap';
 import React, { useState, useEffect} from 'react';
 
-import { link, icon } from '../pages/api/_media'
+import { link, icon, YelpSvg, InstaSvg, FacebookSvg } from '../pages/api/_media'
 import banner from '../public/media/trnsp-white.png'
 import open_banner from '../public/media/trnsp-white-open.png'
 import closed_banner from '../public/media/trnsp-white-closed.png'
@@ -26,7 +26,6 @@ function Hero() {
     return (
         <div className="Container">
             {/* Navbar */}
-
             <Navbar className="navbar" bg="dark" variant="dark">
                 <Nav id="nav-group" >
                     {/* Mobile Dropdown Menu */}
@@ -56,13 +55,13 @@ function Hero() {
                     {/* Desktop Navbar */}
                     <Container className="nav-icon-container"> 
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.facebook}>
-                            <Image className="fb-logo" src={icon.facebook} alt="" />
+                            <FacebookSvg />
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.instagram}>
-                            <Image className="insta-logo" src={icon.instagram} alt="" />
+                            <InstaSvg />
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.yelp}>
-                            <Image className="yelp-logo" src={icon.yelp} alt="" />
+                            <YelpSvg />
                         </Nav.Link>
                     </Container>
                             {/* Logo */}

@@ -139,6 +139,7 @@
     padding-right: 1em;
 }
 .nav-link {
+    fill: #fff;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -150,22 +151,45 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#instaGradient {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .fb-logo {
+    fill: #fff;
     width: 80%;
     object-fit: contain;
 }
+    .fb-logo:hover {
+        fill: #1f77cf;
+    }
 
 .insta-logo {
+    fill: #fff;
     width: 80%;
     object-fit: contain;
 }
+    .insta-logo:hover {
+        fill: #C13584;
+    }
 
 .yelp-logo {
-    width: 80%;
+    fill: #fff;
+    width: 100%;
     object-fit: contain;
 }
+    .yelp-logo:hover {
+        fill: #d32323;
+    }
 
 /* Hero Banner */
 .hero-img {
