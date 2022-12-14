@@ -23,7 +23,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: #141414;
+    border: 4px solid #000;
+    background-color: #c1c1c1;
 }
 
 .contact-us-container {
@@ -33,9 +34,14 @@
     align-content: center;
     align-items: center;
     justify-items: center;
+    width: 70%;
+    padding-bottom: 2em;
     height: auto;
     margin: auto;
     margin-top: 3em;
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #1e1e1e;
 }
 
 .contact-wrapper {
@@ -44,7 +50,7 @@
     flex-wrap: wrap;
     flex: 1 1;
     justify-content: center;
-    max-width: 65%;
+    max-width: 70%;
 }
 
 .contact-header {
@@ -83,9 +89,10 @@ form {
     max-width: 700px;
     margin: 10px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 3px solid #000;
     box-shadow: 0 2px 5px #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: #1e1e1e;
 }
 
 label {

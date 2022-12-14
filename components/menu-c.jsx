@@ -198,7 +198,7 @@ function MenuC() {
                         
                         <div className="ext-four ext">
                             <div className="ext-subheader">
-                                <h2 className="sl-header">Sugar Level</h2>
+                                <h2 className="sugarl-header">Sugar Level</h2>
                             </div>
                            <Image src={drink.sugarlevel} alt="Sugar Level" priority/>
                         </div>
