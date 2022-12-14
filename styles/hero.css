@@ -169,9 +169,9 @@
     width: 80%;
     object-fit: contain;
 }
-    .fb-logo:hover {
-        fill: #1f77cf;
-    }
+.fb-logo-wrapper, .fb-logo:hover {
+    fill: #1f77cf;
+}
 
 .insta-logo {
     fill: #fff;

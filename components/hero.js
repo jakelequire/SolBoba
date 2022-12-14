@@ -55,7 +55,7 @@ function Hero() {
                     {/* Desktop Navbar */}
                     <Container className="nav-icon-container"> 
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.facebook}>
-                            <FacebookSvg />
+                            <div className="fb-logo-wrapper"><FacebookSvg /></div>
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.instagram}>
                             <InstaSvg />

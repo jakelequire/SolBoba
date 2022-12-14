@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'next/image'
-import { link, icon } from '../pages/api/_media'
+import { link, icon, YelpSvg, InstaSvg, FacebookSvg } from '../pages/api/_media'
 import React, { useState, useEffect } from 'react';
 
 import logo from '../public/media/logo1.png'
@@ -48,15 +48,15 @@ function NavBar() {
                     
                     
                     {/* Desktop Navbar */}
-                    <Container className="nav-icon-container"> 
+                   <Container className="nav-icon-container"> 
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.facebook}>
-                            <Image className="fb-logo" src={icon.facebook} alt="" />
+                            <FacebookSvg />
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.instagram}>
-                            <Image className="insta-logo" src={icon.instagram} alt="" />
+                            <InstaSvg />
                         </Nav.Link>
                         <Nav.Link id="nav-icon" className="nav-icon" href={link.yelp}>
-                            <Image className="yelp-logo"  src={icon.yelp, width="50", height="50"} alt="" />
+                            <YelpSvg />
                         </Nav.Link>
                     </Container>
                             {/* Logo */}
