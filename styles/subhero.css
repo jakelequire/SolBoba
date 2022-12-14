@@ -73,6 +73,8 @@
     justify-content: center;
     height: fit-content;
     width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .sl-container {
@@ -142,9 +144,12 @@
 
 .activeOne {
     background-color: #c1c1c1;
+    color: #000;
     border-radius: 10px;
     height: 400px;
     width: 425px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .activeTwo {
@@ -153,6 +158,8 @@
     border-radius: 10px;
     height: 400px;
     width: 425px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .none {
@@ -262,6 +269,8 @@
     font-weight: 400;
     background-color: #c1c1c1;
     border-radius: 10px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
     height: 400px;
     width: 425px;
 }
@@ -273,6 +282,7 @@
     width: 425px;
     display: grid;
     grid-template-rows: 100px 150px 150px;
+
 }
 
 .location-header {
