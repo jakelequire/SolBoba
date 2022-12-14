@@ -16,14 +16,14 @@
 
 .contact-items {
     display: flex;
-    width: 80%;
+    width: 70%;
     height: auto;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: 4px solid #000;
+    border: 6px solid #000;
     background-color: #c1c1c1;
 }
 
@@ -39,9 +39,10 @@
     height: auto;
     margin: auto;
     margin-top: 3em;
-    border: 3px solid #000;
+    border: 5px solid #000;
     border-radius: 15px;
     background-color: #1e1e1e;
+    filter: drop-shadow(0 0 0.75rem #000);
 }
 
 .contact-wrapper {
@@ -89,10 +90,11 @@ form {
     max-width: 700px;
     margin: 10px auto;
     padding: 20px;
-    border: 3px solid #000;
+    border: 5px solid #000;
     box-shadow: 0 2px 5px #ccc;
     border-radius: 15px;
     background-color: #1e1e1e;
+    filter: drop-shadow(0 0 0.75rem #000);
 }
 
 label {
@@ -104,7 +106,7 @@ label {
 input, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -123,11 +125,12 @@ input, textarea {
 
 .submit-btn {
     font-size: 16px;
+    font-weight: 500;
     padding: 10px 20px;
-    border-radius: 4px;
-    color: white;
-    background-color: #114a82;
-    border: none;
+    border-radius: 5px;
+    color: #000;
+    background-color: #c1c1c1;
+    border: 3px solid #000;
     cursor: pointer;
     margin-top: 10px;
     -moz-transition: all .2s ease-in;
@@ -137,5 +140,6 @@ input, textarea {
 }
 
     .submit-btn:hover {
-        background-color: #186fc6;
+        color: #fff;
+        background-color: #114a82;
     }
