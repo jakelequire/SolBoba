@@ -242,7 +242,7 @@ h3 {
 
 .extras-wrapper {
     display: flex;
-    background-color: #191919;
+    background-color: #1e1e1e;
     padding: 1em;
     padding-left: 5em;
     border: 2px solid black;
@@ -287,8 +287,6 @@ h3 {
     flex-direction: column;
     line-height: 5px;
     font-size: 18px;
-}
-
 }
 
 .sugarl-header {

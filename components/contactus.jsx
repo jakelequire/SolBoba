@@ -1,7 +1,11 @@
+import { handleSubmit } from '../pages/api/_email';
 import Container from 'react-bootstrap/Container';
+
 
 function ContactUs() {
 
+
+    
     return (
         <Container className="contact-us-wrapper">
             <div className="contact-items">
@@ -17,7 +21,7 @@ function ContactUs() {
                 </Container>
 
                 <Container className="form-container">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <span className="f-items">
                             <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name" />

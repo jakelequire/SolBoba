@@ -22,9 +22,6 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 6px solid #000;
-    background-color: #c1c1c1;
 }
 
 .contact-us-container {
@@ -34,13 +31,13 @@
     align-content: center;
     align-items: center;
     justify-items: center;
-    width: 70%;
+    width: 65%;
     padding-bottom: 2em;
     height: auto;
     margin-top: 3em;
     border: 5px solid #000;
     border-radius: 15px;
-    background-color: #1e1e1e;
+    background-color: #c1c1c1;
     filter: drop-shadow(0 0 0.75rem #000);
 }
 
@@ -91,11 +88,10 @@ form {
     max-width: 700px;
     margin: 10px auto;
     padding: 20px;
-    border: 5px solid #000;
-    box-shadow: 0 2px 5px #ccc;
+    border: 3px solid #000;
     border-radius: 15px;
-    background-color: #1e1e1e;
-    filter: drop-shadow(0 0 0.75rem #000);
+    background-color: #c1c1c1;
+    filter: drop-shadow(2px 5px 3px #000);
 }
 
 label {
@@ -109,10 +105,26 @@ input, textarea {
     width: 100%;
     color: #000;
     padding: 12px;
-    border: 3px solid #ccc;
+    border: 3px solid #000;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #c1c1c1;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
+    #email:focus-visible, 
+    #subject:focus-visible, 
+    #message:focus-visible,
+    #name:focus-visible {
+    outline: 1px solid #000;
+    filter: drop-shadow(1px 3px 1px #000);
+}
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+    }
 
 .f-items {
     font-size: 20px;
@@ -144,5 +156,5 @@ input, textarea {
 
     .submit-btn:hover {
         color: #fff;
-        background-color: #114a82;
+        background-color: #1d2d5c;
     }
