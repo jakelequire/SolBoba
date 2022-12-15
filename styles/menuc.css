@@ -4,7 +4,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color:#1e1e1e;
+    background-color: #c1c1c1;
 }
 
 .menupg-container {
@@ -21,6 +21,16 @@
     align-content: center;
 }
 
+.menupg-bg {
+    width: 85%;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e1e1e;
+}
+
 .menupg-header {
     display: inline-flex;
     justify-content: center;
@@ -29,10 +39,11 @@
     border: 4px solid #000;
     font-size: 60px;
     font-weight: 600;
-    border-radius: 15px;
-    color: #000;
-    background-color: #c1c1c1;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #1d2d5c;
     padding: 10px 3em 15px 3em;
+    filter: drop-shadow(2px 5px 3px #000);
 }
 .int-menu-container {
     display: flex;
@@ -41,9 +52,6 @@
     justify-self: center;
     align-items: center;
     justify-items: center;
-    background-color: #c1c1c1;
-    border: 5px solid;
-    border-color: #000;
     border-radius: 35px;
     width: 85vw;
     height: auto;
@@ -58,9 +66,6 @@
     justify-self: center;
     align-items: center;
     justify-items: center;
-    background-color: #c1c1c1;
-    border: 5px solid;
-    border-color: #000;
     border-radius: 35px;
     width: 85vw;
     height: auto;
@@ -82,11 +87,12 @@ h3 {
 .menu-header {
     justify-self: center;
     align-items: center;
-    color: #fff;
-    background-color: #1e1e1e;
+    color: #000;
+    background-color: #c1c1c1;
     border: 5px solid #000;
     padding: 0.1em 3em 0.4em 3em;
-    border-radius: 25px;
+    border-radius: 55px;
+    filter: drop-shadow(2px 5px 3px #000);
 }
 .download-container {
     display: flex;
@@ -120,6 +126,13 @@ h3 {
 
 /* ----- FIRST MENU ----- */
 
+.mt, .st, .mkt, .ft {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
 /* -- Milk Tea -- */
 
 .milktea-wrapper {
@@ -142,12 +155,15 @@ h3 {
     flex-direction: column;
     align-content: center;
     border-radius: 10px;
-    border: 3px solid #000;
-    background-color: #1e1e1e;
+    color: #fff;
+    border: 4px solid #000;
+    background-color: #1d2d5c;
     margin: 5px;
+    filter: drop-shadow(2px 5px 3px #000);
 }
     .mt:hover{
         transform: translate(1px, -3px);
+        
     }
 
 /* -- Specialty -- */
@@ -171,8 +187,11 @@ h3 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 3px solid #000;
-    background-color: #1e1e1e;
+    color: #fff;
+    border: 4px solid #000;
+    background-color: #1d2d5c;
+    margin: 5px;
+    filter: drop-shadow(2px 5px 3px #000);
     margin: 5px;
 }
     .st:hover {
@@ -202,8 +221,11 @@ h3 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 3px solid #000;
-    background-color: #1e1e1e;
+    color: #fff;
+    border: 4px solid #000;
+    background-color: #1d2d5c;
+    margin: 5px;
+    filter: drop-shadow(2px 5px 3px #000);
     margin: 5px;
 }
     .mkt:hover {
@@ -231,8 +253,11 @@ h3 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 3px solid #000;
-    background-color: #1e1e1e;
+    color: #fff;
+    border: 4px solid #000;
+    background-color: #1d2d5c;
+    margin: 5px;
+    filter: drop-shadow(2px 5px 3px #000);
     margin: 5px;
 }
     .ft:hover {
@@ -255,7 +280,7 @@ h3 {
     gap: 5em;
     border-radius: 10px;
     border: 3px solid #000;
-    background-color: #1e1e1e;
+    background-color: #1d2d5c;
     margin: 5px;
     padding-right: 2em;
     padding-left: 2em;

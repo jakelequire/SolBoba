@@ -6,6 +6,7 @@ function MenuC() {
 
     return (
         <Container className="menuhp-container">
+        <div className="menupg-bg">
            <div className="menupg-container">
              <h2 className="menupg-header"> Sol Boba Menu </h2>
             </div>
@@ -219,6 +220,7 @@ function MenuC() {
                     </a> 
                  </div>
              </div>
+        </div>
         </Container>
     );
 }

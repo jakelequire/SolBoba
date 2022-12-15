@@ -10,18 +10,18 @@
     align-content: center;
     width: 100vw;
     height: auto;
-    padding-top: 2em;
-    padding-bottom: 5em;
+    background-color: #c1c1c1;
 }
 
 .contact-items {
     display: flex;
-    width: 70%;
+    width: 80%;
     height: auto;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
+    background-color: #1e1e1e;
 }
 
 .contact-us-container {
