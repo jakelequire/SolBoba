@@ -29,7 +29,7 @@ function SubHero()
         thrusday: ' 11:00am - 9:00pm',
         friday: ' 11:00am - 10:00pm',
         saturday: ' 11:00am - 10:00pm',
-        sunday: ' 12:00pm - 9:00pm'
+        sunday: ' 11:00pm - 9:00pm'
     }
     const delvHours = {
         monday: ' 11:00am - 8:30pm',

@@ -1,41 +1,41 @@
-import handleSubmit from '../pages/api/_email';
+// import handleSubmit from '../pages/api/_email';
 import Container from 'react-bootstrap/Container';
 
 
 function ContactUs() {
-  const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  // const [fullname, setFullname] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [message, setMessage] = useState("");
 
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    let isValidForm = handleValidation();
+  //   let isValidForm = handleValidation();
 
      
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+  //     const res = await fetch("/api/sendgrid", {
+  //       body: JSON.stringify({
+  //         email: email,
+  //         fullname: fullname,
+  //         subject: subject,
+  //         message: message,
+  //       }),
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       method: "POST",
+  //     });
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        return;
-      }
-    console.log(fullname, email, subject, message);
-  };
+  //     const { error } = await res.json();
+  //     if (error) {
+  //       console.log(error);
+  //       return;
+  //     }
+  //   console.log(fullname, email, subject, message);
+  // };
     return (
         <Container className="contact-us-wrapper">
             <div className="contact-items">
@@ -51,7 +51,7 @@ function ContactUs() {
                 </Container>
 
                 <Container className="form-container">
-                    <form onSubmit={handleSubmit}>
+                    <form>
                         <span className="f-items">
                             <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name" />
