@@ -37,10 +37,10 @@ function Hero() {
                         </button>
                         {menuOpen && (
                             <div className="dropdown-menu">
-                                <a id="dd-item" href="">Menu</a>
-                                <a id="dd-item" href="">Contact Us</a>
-                                <a id="dd-item" href="">Reviews</a>
-                                <a id="dd-item" href="">Order Online</a>
+                                <a id="dd-item" href="/menu">Menu</a>
+                                <a id="dd-item" href="/contact">Contact Us</a>
+                                <a id="dd-item" href={link.yelp}>Reviews</a>
+                                <a id="dd-item" href={link.uberEats}>Order Online</a>
                             </div>
                         )}
                         
