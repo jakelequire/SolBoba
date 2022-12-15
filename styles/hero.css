@@ -20,7 +20,8 @@
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(to right, #000020, #000000, #000020);
+    /* background: linear-gradient(to right, #000020, #000000, #000020); */
+    background: #000;
     height: fit-content;
     padding-top: 2px;
     padding-bottom: 2px;

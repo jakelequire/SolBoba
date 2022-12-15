@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #1e1e1e
+    background-color: #1e1e1e;
 }
 
 .sub-container {
@@ -42,7 +42,7 @@
     font-family: 'Josefin Sans';
     font-size: 25px;
     font-weight: 500;
-    color: #1d2d5c;
+    color: #000;
     background-color: #c1c1c1;
     border: 4px solid;
     justify-content: center;
@@ -57,6 +57,7 @@
 
     .btn:hover {
         color: white;
+        filter: drop-shadow(1px 5px 2px #000);
         background-color: #1d2d5c;
     }
 
@@ -144,8 +145,9 @@
 
 .activeOne {
     background-color: #c1c1c1;
-    color: #000;
+    border: 5px solid #000;
     border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #000);
     height: 400px;
     width: 425px;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -154,8 +156,10 @@
 
 .activeTwo {
     background-color: #c1c1c1;
+    border: 5px solid #000;
     color: #000;
     border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #000);
     height: 400px;
     width: 425px;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -262,6 +266,7 @@
 /* Location */
 .static-background {
     justify-content: center;
+    border: 5px solid #000;
     align-items: center;
     align-self: unset;
     display: inline-flex;
@@ -339,6 +344,7 @@
 }
     .directions:hover {
         background-color: #1d2d5c;
+        filter: drop-shadow(1px 3px 2px #000);
         color: white;
         font-weight: 500;
     }
