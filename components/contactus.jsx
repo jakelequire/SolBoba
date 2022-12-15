@@ -1,11 +1,41 @@
-import { handleSubmit } from '../pages/api/_email';
+import handleSubmit from '../pages/api/_email';
 import Container from 'react-bootstrap/Container';
 
 
 function ContactUs() {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
 
-    
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let isValidForm = handleValidation();
+
+     
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: email,
+          fullname: fullname,
+          subject: subject,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        return;
+      }
+    console.log(fullname, email, subject, message);
+  };
     return (
         <Container className="contact-us-wrapper">
             <div className="contact-items">
