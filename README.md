@@ -20,10 +20,10 @@ This project uses the following libraries:
 
 To install these dependencies, run the following command in the terminal:
 
-Reactjs `` npm i react ``
-Nextjs `` npm i next ``
+Reactjs ``` npm i react ```
+Nextjs ``` npm i next ```
 React-Bootstrap `` npm i react-bootstrap``
-Axios `` npm i axios ``
+Axios ``` npm i axios ```
 
 ## Usage
 
