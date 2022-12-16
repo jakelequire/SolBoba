@@ -5,9 +5,9 @@
     "\\pages",
     "\\pages\\api",
     "\\public",
-    "\\public\\media",
+    "\\public\\media\\drinks",
     "\\styles"
   ],
-  "SelectedNode": "\\components\\hero.js",
+  "SelectedNode": "\\next.config.js",
   "PreviewInSolutionExplorer": false
 }
