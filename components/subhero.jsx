@@ -19,8 +19,7 @@ const dayOfWeekName = new Date().toLocaleString(
     'default', { weekday: 'long' }
 );
 
-function SubHero()
-{
+function SubHero() {
     const [index, setIndex] = useState(0);
     const regHours = {
         monday: ' 11:00am - 9:00pm',
@@ -143,11 +142,7 @@ function SubHero()
                       <a className="directions" href={link.directions}>Directions</a>
                   </div>
              </div>
-
-                
-           </div> {/* sl-container */}
-
-            
+           </div>
         </div>
     );
 }
