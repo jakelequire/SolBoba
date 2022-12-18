@@ -1,31 +1,10 @@
-import handleSubmit from '../pages/api/_email';
+
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import axios from "axios";
 
 function ContactUs() {
-   const [fullname, setFullname] = useState("");
-   const [email, setEmail] = useState("");
-   const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
 
-   const handleSubmit = (event) => {
-    event.preventDefault();
-
-    axios
-      .post("/api/_email.js", {
-        name: fullname,
-        email: email,
-        subject: subject,
-        message: message,
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
     return (
         <Container className="contact-us-wrapper">
             <div className="contact-items">
@@ -41,14 +20,14 @@ function ContactUs() {
                 </Container>
 
         <Container className="form-container">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <span className="f-items">
                   <label htmlFor="name">Name:</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    value={fullname}
+/*                    value={fullname}*/
                     onChange={(event) => setFullname(event.target.value)}
                   />
                 </span>
@@ -58,7 +37,7 @@ function ContactUs() {
                     type="text"
                     id="email"
                     name="email"
-                    value={email}
+/*                    value={email}*/
                     onChange={(event) => setEmail(event.target.value)}
                   />
                 </span>
@@ -68,7 +47,7 @@ function ContactUs() {
                     type="text"
                     id="subject"
                     name="subject"
-                    value={subject}
+/*                    value={subject}*/
                     onChange={(event) => setSubject(event.target.value)}
                   />
                 </span>
@@ -79,7 +58,7 @@ function ContactUs() {
                     name="message"
                     rows="5"
                     cols="30"
-                    value={message}
+/*                    value={message} */
                     onChange={(event) => setMessage(event.target.value)}
                   />
                 </span>
