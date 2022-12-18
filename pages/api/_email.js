@@ -3,20 +3,19 @@ import sendgrid from "@sendgrid/mail";
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function handleSubmit(req, res) {
-            const name = event.target.elements.name.value;
-            const email = event.target.elements.email.value;
-            const subject = event.target.elements.subject.value;
-            const message = event.target.elements.message.value;
+    console.log("This is a test")
+    const event = req.event;
+    
   try {
-    // console.log("REQ.BODY", req.body);
+    console.log("REQ.BODY", req.body);
     await sendgrid.send({
               to: 'jlequire@finxity.net',
-              from: email,
-              subject: subject,
-              text: message,
+              from: event.target.elements.email.value,
+              subject: event.target.elements.subject.value,
+              text: event.target.elements.message.value,
     });
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 

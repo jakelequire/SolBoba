@@ -1,41 +1,31 @@
-// import handleSubmit from '../pages/api/_email';
+import handleSubmit from '../pages/api/_email';
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-
+import axios from "axios";
 
 function ContactUs() {
-  // const [fullname, setFullname] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [subject, setSubject] = useState("");
-  // const [message, setMessage] = useState("");
+   const [fullname, setFullname] = useState("");
+   const [email, setEmail] = useState("");
+   const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
 
+   const handleSubmit = (event) => {
+    event.preventDefault();
 
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   let isValidForm = handleValidation();
-
-     
-  //     const res = await fetch("/api/sendgrid", {
-  //       body: JSON.stringify({
-  //         email: email,
-  //         fullname: fullname,
-  //         subject: subject,
-  //         message: message,
-  //       }),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       method: "POST",
-  //     });
-
-  //     const { error } = await res.json();
-  //     if (error) {
-  //       console.log(error);
-  //       return;
-  //     }
-  //   console.log(fullname, email, subject, message);
-  // };
+    axios
+      .post("/api/_email.js", {
+        name: fullname,
+        email: email,
+        subject: subject,
+        message: message,
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
     return (
         <Container className="contact-us-wrapper">
             <div className="contact-items">
@@ -50,28 +40,55 @@ function ContactUs() {
                     </div>
                 </Container>
 
-                <Container className="form-container">
-                    <form>
-                        <span className="f-items">
-                            <label htmlFor="name">Name:</label>
-                            <input type="text" id="name" name="name" />
-                        </span>
-                        <span className="f-items">
-                            <label htmlFor="email">Email:</label>
-                            <input type="text" id="email" name="email" />
-                        </span>
-                        <span className="f-items">
-                            <label htmlFor="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" />
-                        </span>
-                        <span className="f-items">
-                            <label htmlFor="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" cols="30" />
-                        </span>
-                        <button className="submit-btn" type="submit">Submit</button>
-                    </form>
-                </Container>
-            </div>
+        <Container className="form-container">
+            <form onSubmit={handleSubmit}>
+                <span className="f-items">
+                  <label htmlFor="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={fullname}
+                    onChange={(event) => setFullname(event.target.value)}
+                  />
+                </span>
+                <span className="f-items">
+                  <label htmlFor="email">Email:</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                  />
+                </span>
+                <span className="f-items">
+                  <label htmlFor="subject">Subject:</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={subject}
+                    onChange={(event) => setSubject(event.target.value)}
+                  />
+                </span>
+                <span className="f-items">
+                  <label htmlFor="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="30"
+                    value={message}
+                    onChange={(event) => setMessage(event.target.value)}
+                  />
+                </span>
+                <button className="submit-btn" type="submit">
+                  Submit
+                </button>
+            </form> 
+            </Container>
+          </div>
         </Container>
     );
 }
